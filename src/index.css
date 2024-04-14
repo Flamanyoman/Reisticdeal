@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: black;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.fillwindow {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+section,
+footer {
+  padding: 25px 75px;
+}
+
+button.darkgreen_green {
+  background-color: #37cb611a;
+  color: #37cb61;
+}
+
+button.lightgreen_green {
+  background-color: #40c70a1a;
+  color: #37cb61;
+}
+
+button.green_black {
+  background-color: #37cb61;
+  color: black;
+}
+
+button.black_green {
+  background-color: black;
+  color: #37cb61;
+}
+
+button.green_white {
+  background-color: #37cb61;
+  color: white;
+}
+
+button.transparent_white {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #37cb61;
+}
+
+.bigheader_white {
+  color: white;
+}
+
+h1 span,
+h2 span {
+  color: #37cb61;
+}
+
+p.white {
+  color: white;
+}
+
+p.green {
+  color: #37cb61;
+}
+
+p.xl {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+p.l {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+p.special {
+  line-height: 35px;
+}
+
+p.s {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.wide__card {
+  width: 30%;
+  aspect-ratio: 23/20;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 20px;
+  box-shadow: 20px 20px 15px -20px #97979721;
+}
+
+.face__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* mobile version */
+@media only screen and (max-width: 600px) {
+  section,
+  footer {
+    padding: 10px 20px;
+  }
+
+  p.xl {
+    line-height: 24px;
+  }
+
+  p.l {
+    line-height: 18px;
+  }
+
+  p.special {
+    line-height: 26px;
+  }
+
+  p.s {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .wide__card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .face__card {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+}
+
+/* Styles for screens with a width greater than 1024px */
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
