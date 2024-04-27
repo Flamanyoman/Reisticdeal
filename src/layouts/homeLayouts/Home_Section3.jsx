@@ -15,44 +15,59 @@ const HomeSection3 = () => {
           specialText='Solutions!!'
         />
       </span>
-      <div className='flex-grow  min-h-[515px] flex w-full items-center'>
-        <div className='w-[50%]'>
-          <BigHeadings
-            color=''
-            type='h2'
-            text1='Qualified-Exclusive RE Leads Via Organic Content'
-          />
 
-          <span className='h-[50px] flex items-center'>
-            <img src={checkbox} alt='checked' className='pr-[4px]' />
+      <div className='flex-grow  min-h-[515px] flex w-full items-center maxScreenMobile:flex-col-reverse '>
+        <div className='w-[50%] maxScreenMobile:w-full'>
+          <span className='maxScreenMobile:block maxScreenMobile:pb-[40px]'>
+            <BigHeadings
+              color=''
+              type='h2'
+              text1='Qualified-Exclusive RE Leads Via Organic Content'
+            />
+          </span>
+
+          <span className='h-[50px] flex items-center maxScreenMobile:pb-[30px]'>
+            <img
+              src={checkbox}
+              alt='checked'
+              className='pr-[4px] maxScreenMobile:pr-0'
+            />
             <Texts
               color=''
-              type='l'
+              type='s'
               text=' Exclusive, qualified Real Estate Leads at your Fingertips.'
             />
           </span>
 
-          <span className='h-[50px] flex items-center'>
-            <img src={checkbox} alt='checked' className='pr-[4px]' />
+          <span className='h-[50px] flex items-center maxScreenMobile:pb-[30px]'>
+            <img
+              src={checkbox}
+              alt='checked'
+              className='pr-[4px] maxScreenMobile:pr-0'
+            />
             <Texts
               color=''
-              type='l'
+              type='s'
               text='Tested Content Playbook that turns Eye-Balls into $$$ Signs.'
             />
           </span>
 
-          <span className='h-[50px] flex items-center'>
-            <img src={checkbox} alt='checked' className='pr-[4px]' />
+          <span className='h-[50px] flex items-center maxScreenMobile:pb-[30px]'>
+            <img
+              src={checkbox}
+              alt='checked'
+              className='pr-[4px] maxScreenMobile:pr-0'
+            />
             <Texts
               color=''
-              type='l'
+              type='s'
               text='Guaranteed 10+ Closed Deals using the "Growth Thesis" System.'
             />
           </span>
         </div>
 
-        <div className='w-[50%] min-h-[515px] px-[30px] relative overflow-hidden'>
-          <span className='w-[82.5%] h-[250px] flex flex-col justify-between'>
+        <div className='w-[50%] min-h-[515px] px-[30px] relative overflow-hidden maxScreenMobile:w-full maxScreenMobile:border-2 maxScreenMobile:border-[#E0DEF7] maxScreenMobile:mb-[30px]'>
+          <span className='w-[82.5%] h-[250px] flex flex-col justify-between maxScreenMobile:h-[100px]'>
             <BigHeadings
               color=''
               type='h2'
@@ -61,7 +76,7 @@ const HomeSection3 = () => {
 
             <Texts
               color=''
-              type='l'
+              type='s'
               text='Find your dream place to live in with more than 10k+ properties listed.'
             />
 

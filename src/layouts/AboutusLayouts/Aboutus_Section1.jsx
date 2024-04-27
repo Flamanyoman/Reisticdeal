@@ -7,8 +7,8 @@ import VideoThumbnail from '../../components/videothumbnail';
 const Aboutus_Section = () => {
   return (
     <div className='flex flex-col '>
-      <div className='flex-grow  min-h-[350px] flex w-full'>
-        <span className=' w-1/2 flex flex-col py-[75px] pr-[50px] h-[350px]'>
+      <div className='flex-grow  min-h-[350px] flex w-full maxScreenMobile:flex-col-reverse'>
+        <span className=' w-1/2 flex flex-col py-[75px] pr-[50px] h-[350px] maxScreenMobile:w-full maxScreenMobile:py-[25px] maxScreenMobile:pr-0 maxScreenMobile:h-[175px]'>
           <Texts
             color=''
             type='l special'
@@ -16,13 +16,13 @@ const Aboutus_Section = () => {
           />
         </span>
 
-        <span className='w-1/2 flex items-center justify-center'>
+        <span className='w-1/2 flex items-center justify-center maxScreenMobile:w-full'>
           <VideoThumbnail id='XF1XIEOKlaE' />
         </span>
       </div>
 
-      <div className='flex-grow  min-h-[350px] flex flex-row-reverse w-full'>
-        <span className=' w-1/2 flex flex-col py-[75px]'>
+      <div className='flex-grow  min-h-[350px] flex flex-row-reverse w-full maxScreenMobile:flex-col-reverse maxScreenMobile:py-[25px]'>
+        <span className=' w-1/2 flex flex-col py-[75px] maxScreenMobile:w-full maxScreenMobile:py-[25px]'>
           <BigHeadings
             color=''
             type='h2'
@@ -36,12 +36,12 @@ const Aboutus_Section = () => {
           />
         </span>
 
-        <span className='w-1/2 flex items-center justify-center'>
-          <img src={aboutUs2} alt='Reisticdeal image' />
+        <span className='w-1/2 flex items-center justify-center maxScreenMobile:w-full'>
+          <img src={aboutUs2} alt='Reisticdeal image' className='w-full' />
         </span>
       </div>
 
-      <div className='flex-grow  min-h-[350px] flex w-full'>
+      <div className='flex-grow  min-h-[350px] flex w-full maxScreenMobile:hidden'>
         <span className=' w-1/2 flex flex-col py-[75px] pr-[50px] h-[350px]'>
           <Texts
             color=''

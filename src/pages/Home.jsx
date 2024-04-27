@@ -45,7 +45,7 @@ const Home = () => {
         <HomeSection6 />
       </section>
 
-      <section className='pb-0'>
+      <section className='pb-0 maxScreenMobile:bg-[#1E1E1E]'>
         <HomeSection7 />
       </section>
 

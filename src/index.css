@@ -152,3 +152,26 @@ p.s {
     margin: 0 auto;
   }
 }
+
+/* mobile view and screens */
+@media screen and (max-width: 640px) {
+  section,
+  footer {
+    padding: 25px 20px;
+  }
+
+  p.xl {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  p.s {
+    font-size: 13px;
+  }
+  .wide__card {
+    width: 100%;
+    aspect-ratio: 23/14;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}

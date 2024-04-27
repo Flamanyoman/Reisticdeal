@@ -19,7 +19,7 @@ const VideoThumbnail = ({ id }) => {
       <img
         src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
         alt='Reisticdeal video'
-        className='w-[400px] rounded-3xl'
+        className='w-[400px] rounded-3xl maxScreenMobile:w-full'
       />
 
       <img

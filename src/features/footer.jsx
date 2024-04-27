@@ -9,8 +9,8 @@ import CustomLink from '../components/ui/links';
 
 const Footer = () => {
   return (
-    <footer className='flex justify-between bg-[#1E1E1E] py-[75px]'>
-      <div className='w-1/2 flex flex-col justify-between pr-[80px]'>
+    <footer className='flex justify-between bg-[#1E1E1E] py-[75px] maxScreenMobile:flex-col'>
+      <div className='w-1/2 flex flex-col justify-between pr-[80px] maxScreenMobile:w-full maxScreenMobile:pr-0'>
         <BigHeadings color='bigheader_white' type='h2' text1='Reisticdeal' />
         <Texts
           color='white'
@@ -34,9 +34,9 @@ const Footer = () => {
         </span>
       </div>
 
-      <div className='w-1/2 flex flex-col pr-[60px]'>
+      <div className='w-1/2 flex flex-col pr-[60px] maxScreenMobile:w-full maxScreenMobile:pr-0'>
         <BigHeadings color='bigheader_white' type='h2' text1='Links' />
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center maxScreenMobile:flex-col maxScreenMobile:h-[300px] maxScreenMobile:items-start maxScreenMobile:mt-[30px]'>
           <CustomLink to='/' text='Home' />
           <CustomLink to='/about' text='About' />
           <CustomLink to='/services' text='Services' />

@@ -15,8 +15,8 @@ const TestimonialsSection1 = () => {
             className='w-[350px] rounded-lg mb-[20px]'
           />
 
-          <div className='flex items-center justify-between w-[400px]'>
-            <span className='flex items-center justify-between'>
+          <div className='flex items-center justify-between w-[400px] maxScreenMobile:flex-col maxScreenMobile:items-start'>
+            <span className='flex items-center justify-between maxScreenMobile:pb-[10px]'>
               <img src={money} alt='Reisticdeal Image' />
               <Texts color='' type='l' text='Cash Collected' />:{' '}
               <Texts color='green' type='l' text={testimonial.money} />

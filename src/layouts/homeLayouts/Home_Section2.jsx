@@ -5,7 +5,7 @@ import allData from '../../data/data';
 const HomeSection2 = () => {
   return (
     <div>
-      <span className='w-full flex justify-center items-center pb-[30px]'>
+      <span className='w-full flex justify-center items-center pb-[30px] maxScreenMobile:pb-[15px]'>
         <BigHeadings color='' type='h2' text1='Why Choose Us' />
       </span>
 

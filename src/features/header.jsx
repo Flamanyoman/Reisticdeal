@@ -3,7 +3,7 @@ import { BigHeadings } from '../components/ui/headings';
 const Header = ({ header, greenHeader, text }) => {
   return (
     <header>
-      <div className='flex flex-col items-center relative py-[80px]'>
+      <div className='flex flex-col items-center relative py-[80px] maxScreenMobile:py-[20px]'>
         <BigHeadings
           color='bigheader_white'
           type='h1'
@@ -11,7 +11,7 @@ const Header = ({ header, greenHeader, text }) => {
           specialText={greenHeader}
         />
 
-        <p className='w-[850px] text-white text-[20px] leading-[34px] text-center'>
+        <p className='w-[850px] text-white text-[20px] leading-[34px] text-center maxScreenMobile:w-full maxScreenMobile:text-[16px] maxScreenMobile:leading-[24px]'>
           {text}
         </p>
       </div>

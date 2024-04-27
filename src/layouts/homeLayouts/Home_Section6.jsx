@@ -7,9 +7,12 @@ const HomeSection6 = () => {
     <div className='flex flex-col items-center relative'>
       <BigHeadings color='' type='h2' text1='What Makes Our Leads Qualified?' />
 
-      <div className='w-full flex justify-between items-center'>
+      <div className='w-full flex justify-between items-center maxScreenMobile:flex-col'>
         {allData.longcards.map((longcard, i) => (
-          <span key={i} className='flex border w-[250px] items-center'>
+          <span
+            key={i}
+            className='flex border w-[250px] items-center maxScreenMobile:w-full maxScreenMobile:mb-[30px]'
+          >
             <img
               src={longcard.img}
               alt='Reisticdeal image'

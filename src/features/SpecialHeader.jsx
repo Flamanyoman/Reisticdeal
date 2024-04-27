@@ -8,8 +8,8 @@ import raphaelMane from './assets/raphael-mane.png';
 
 const SpecialHeader = () => {
   return (
-    <div className='bg-[#1E1E1E] py-[75px] flex items-center justify-between'>
-      <div className='flex-grow w-1/2 '>
+    <div className='bg-[#1E1E1E] py-[75px] flex items-center justify-between maxScreenMobile:py-[30px] maxScreenMobile:flex-col'>
+      <div className='flex-grow w-1/2 maxScreenMobile:w-full '>
         <NormalButton
           colorType='darkgreen_green'
           text='Real estate Agent'
@@ -28,30 +28,30 @@ const SpecialHeader = () => {
           text='Get your own Client Acquisition Infrastructure Build Out... Without Wasting Your Time Or Money-'
         />
 
-        <div className='flex items-center justify-between w-[435px] py-[30px]'>
+        <div className='flex items-center justify-between w-[435px] py-[30px] maxScreenMobile:w-full'>
           <NormalButton
             colorType='green_white'
             text='Book a call'
             click={() => console.log('clicked circle')}
           />
 
-          <span className='flex items-center justify-between w-[230px]'>
+          <span className='flex items-center justify-around w-[230px] maxScreenMobile:w-[190px]'>
             <CircleButton
               colorType='transparent_white'
               svg={<FaPlay />}
               click={() => console.log('clicked circle')}
             />
 
-            <Texts color='white' type='l' text='Watch This Short Video' />
+            <Texts color='white' type='l' text='Watch This Video' />
           </span>
         </div>
       </div>
 
-      <div className='w-1/2'>
+      <div className='w-1/2 maxScreenMobile:w-full maxScreenMobile:h-[400px]'>
         <img
           src={joelFilipe}
           alt='Riestical image'
-          className='absolute bottom-[-150px] scale-[.767] right-[-80px]'
+          className='absolute bottom-[-150px] scale-[.767] right-[-80px] maxScreenMobile:bottom-[60px] maxScreenMobile:right-[-50px]'
         />
 
         <TextImageGroup
