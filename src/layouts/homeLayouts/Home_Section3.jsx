@@ -1,98 +1,95 @@
 import { BigHeadings } from '../../components/ui/headings';
-import Texts from '../../components/ui/texts';
-import checkbox from '../../assets/checkbox.png';
-import { NormalButton } from '../../components/ui/buttons';
-import Illustration from './assets/Illustration.png';
+import { ImageCard } from '../../components/ui/images';
 
 const HomeSection3 = () => {
   return (
     <div>
-      <span className='w-full flex justify-center items-center pb-[30px]'>
-        <BigHeadings
-          color=''
-          type='h2'
-          text1='Your One-Stop Real Estate'
-          specialText='Solutions!!'
-        />
-      </span>
+      <div className='w-full flex items-center justify-center'>
+        <BigHeadings text1={'Other Services'} type={'h2'} />
+      </div>
 
-      <div className='flex-grow  min-h-[515px] flex w-full items-center maxScreenMobile:flex-col-reverse '>
-        <div className='w-[50%] maxScreenMobile:w-full'>
-          <span className='maxScreenMobile:block maxScreenMobile:pb-[40px]'>
-            <BigHeadings
-              color=''
-              type='h2'
-              text1='Qualified-Exclusive RE Leads Via Organic Content'
-            />
-          </span>
-
-          <span className='h-[50px] flex items-center maxScreenMobile:pb-[30px]'>
-            <img
-              src={checkbox}
-              alt='checked'
-              className='pr-[4px] maxScreenMobile:pr-0'
-            />
-            <Texts
-              color=''
-              type='s'
-              text=' Exclusive, qualified Real Estate Leads at your Fingertips.'
-            />
-          </span>
-
-          <span className='h-[50px] flex items-center maxScreenMobile:pb-[30px]'>
-            <img
-              src={checkbox}
-              alt='checked'
-              className='pr-[4px] maxScreenMobile:pr-0'
-            />
-            <Texts
-              color=''
-              type='s'
-              text='Tested Content Playbook that turns Eye-Balls into $$$ Signs.'
-            />
-          </span>
-
-          <span className='h-[50px] flex items-center maxScreenMobile:pb-[30px]'>
-            <img
-              src={checkbox}
-              alt='checked'
-              className='pr-[4px] maxScreenMobile:pr-0'
-            />
-            <Texts
-              color=''
-              type='s'
-              text='Guaranteed 10+ Closed Deals using the "Growth Thesis" System.'
-            />
-          </span>
+      <div className='grid grid-cols-3 maxScreenMobile:grid-cols-1 gap-3 maxScreenMobile:gap-1 space-y-6 w-full'>
+        <div className='flex items-center justify-center'>
+          <ImageCard
+            width={'potraite2'}
+            src={
+              'https://images.unsplash.com/photo-1610478492347-5fc0583ed279?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            }
+            header={'Order a Hearse'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus rerum ex earum voluptatem quisquam, sequi libero omnis asperiores. Odio sapiente repellendus '
+            }
+            button={'Purchase'}
+          />
         </div>
 
-        <div className='w-[50%] min-h-[515px] px-[30px] relative overflow-hidden maxScreenMobile:w-full maxScreenMobile:border-2 maxScreenMobile:border-[#E0DEF7] maxScreenMobile:mb-[30px]'>
-          <span className='w-[82.5%] h-[250px] flex flex-col justify-between maxScreenMobile:h-[100px]'>
-            <BigHeadings
-              color=''
-              type='h2'
-              specialText='Your One-Stop Real Estate Solutions!!'
-            />
+        <div className='flex items-center justify-center'>
+          <ImageCard
+            width={'potraite2'}
+            src={
+              'https://th.bing.com/th/id/R.f7784ce8df1b67d82ff45d094b06ca89?rik=P%2b7LBeQuhZaKvQ&riu=http%3a%2f%2fc8.alamy.com%2fcomp%2fACYRWW%2flowering-device-and-funeral-setup-before-the-ceremony-in-a-cemetery-ACYRWW.jpg&ehk=%2fkyTAoW0EaBNAt%2fZCljX51niIs095Lg0GFKLeuY%2fRgQ%3d&risl=&pid=ImgRaw&r=0'
+            }
+            header={'Lowering Devices'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus rerum ex earum voluptatem quisquam, sequi libero omnis asperiores. Odio sapiente repellendus '
+            }
+            button={'Purchase'}
+          />
+        </div>
 
-            <Texts
-              color=''
-              type='s'
-              text='Find your dream place to live in with more than 10k+ properties listed.'
-            />
+        <div className='flex items-center justify-center'>
+          <ImageCard
+            width={'potraite2'}
+            src={
+              'https://plus.unsplash.com/premium_photo-1672774492335-a3183674f3cf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            }
+            header={'Event Security'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus rerum ex earum voluptatem quisquam, sequi libero omnis asperiores. Odio sapiente repellendus '
+            }
+            button={'Purchase'}
+          />
+        </div>
 
-            <span className='py-[30px]'>
-              <NormalButton
-                colorType='green_white'
-                text='Book Now'
-                click={() => console.log('clicked circle')}
-              />
-            </span>
-          </span>
+        <div className='flex items-center justify-center'>
+          <ImageCard
+            width={'potraite2'}
+            src={
+              'https://plus.unsplash.com/premium_photo-1713985789850-6c713e0fb1b2?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            }
+            header={'Hall Decoration'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus rerum ex earum voluptatem quisquam, sequi libero omnis asperiores. Odio sapiente repellendus '
+            }
+            button={'Purchase'}
+          />
+        </div>
 
-          <img
-            src={Illustration}
-            alt='Reisticdeal image'
-            className='absolute w-[375px] bottom-0 right-0'
+        <div className='flex items-center justify-center'>
+          <ImageCard
+            width={'potraite2'}
+            src={
+              'https://images.unsplash.com/photo-1654130015839-2cdfc163ec87?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            }
+            header={'Funeral Planning'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus rerum ex earum voluptatem quisquam, sequi libero omnis asperiores. Odio sapiente repellendus '
+            }
+            button={'Purchase'}
+          />
+        </div>
+
+        <div className='flex items-center justify-center'>
+          <ImageCard
+            width={'potraite2'}
+            src={
+              'https://plus.unsplash.com/premium_photo-1680859126181-6f85456f864e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            }
+            header={'Billboards and Advertisments'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus rerum ex earum voluptatem quisquam, sequi libero omnis asperiores. Odio sapiente repellendus '
+            }
+            button={'Purchase'}
           />
         </div>
       </div>

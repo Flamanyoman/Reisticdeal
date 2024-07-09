@@ -5,7 +5,7 @@ import allData from '../../data/data';
 const HomeSection6 = () => {
   return (
     <div className='flex flex-col items-center relative'>
-      <BigHeadings color='' type='h2' text1='What Makes Our Leads Qualified?' />
+      <BigHeadings color='' type='h2' text1='What Makes Us Different?' />
 
       <div className='w-full flex justify-between items-center maxScreenMobile:flex-col'>
         {allData.longcards.map((longcard, i) => (

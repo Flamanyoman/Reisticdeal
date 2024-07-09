@@ -10,12 +10,11 @@ const HomeSection5 = () => {
   return (
     <div className='flex flex-col items-center relative'>
       <NormalButton
-        colorType='lightgreen_green'
-        text='Real Stories, Real Success'
+        text='Real Stories, Real Memories'
         click={() => console.log('clicked')}
       />
 
-      <BigHeadings color='' type='h2' text1='See Why Agents Trust Us!' />
+      <BigHeadings color='' type='h2' text1='See Why Families Trust Us!' />
 
       <span className='flex w-[350px] justify-between items-center'>
         <img src={costumer} alt='Reisticdeal image' />

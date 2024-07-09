@@ -9,8 +9,14 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col bg-transparent '>
       <nav className='flex items-center justify-between'>
+        <span className='flex w-[450px] items-center justify-between maxScreenMobile:hidden'>
+          <CustomLink to='/' text='Home' />
+          <CustomLink to='/about' text='Services' />
+          <CustomLink to='/services' text='Gallary' />
+        </span>
+
         <img
           src={Logo}
           alt='Reisticdeal '
@@ -18,12 +24,10 @@ const Navbar = () => {
           className='cursor-pointer'
         />
 
-        <span className='flex w-[619px] items-center justify-between maxScreenMobile:hidden'>
-          <CustomLink to='/' text='Home' />
-          <CustomLink to='/about' text='About' />
-          <CustomLink to='/services' text='Services' />
-          <CustomLink to='/case-studies' text='Case Studies' />
-          <CustomLink to='/testimonials' text='Testimonials' />
+        <span className='flex w-[450px] items-center justify-between maxScreenMobile:hidden'>
+          <CustomLink to='/services' text='About us' />
+          <CustomLink to='/case-studies' text='Tribute site' />
+          <CustomLink to='/testimonials' text='Location' />
         </span>
 
         <span
@@ -40,10 +44,12 @@ const Navbar = () => {
         }`}
       >
         <CustomLink to='/' text='Home' />
-        <CustomLink to='/about' text='About' />
-        <CustomLink to='/services' text='Services' />
-        <CustomLink to='/case-studies' text='Case Studies' />
-        <CustomLink to='/testimonials' text='Testimonials' />
+        <CustomLink to='/about' text='Services' />
+        <CustomLink to='/services' text='Gallary' />
+
+        <CustomLink to='/case-studies' text='About us' />
+        <CustomLink to='/case-studies' text='Tribute site' />
+        <CustomLink to='/testimonials' text='Location' />
       </span>
     </div>
   );

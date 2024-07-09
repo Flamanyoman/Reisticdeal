@@ -54,11 +54,11 @@ const allData = {
   longcards: [
     {
       img: longcard1,
-      text: 'Ready to Buy',
+      text: 'Time Conscious',
     },
     {
       img: longcard2,
-      text: 'Educated and Nurture by you',
+      text: 'Quality Delivery',
     },
     {
       img: longcard3,
@@ -149,3 +149,6 @@ const allData = {
 };
 
 export default allData;
+
+
+

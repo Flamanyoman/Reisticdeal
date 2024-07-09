@@ -8,6 +8,7 @@ import Testimonials from './pages/Testimonials';
 import OutofBounds from './pages/404';
 import { useContext } from 'react';
 import { ModalContext } from './context/modalContext';
+import Gallary from './pages/Gallary';
 
 const router = createBrowserRouter([
   {
@@ -34,12 +35,15 @@ const router = createBrowserRouter([
     path: '/case-studies',
     element: <CaseStudies />,
   },
+
+  {
+    path: 'gallary',
+    element: <Gallary />,
+  },
 ]);
 
 function App() {
   const { state, setState } = useContext(ModalContext);
-
-  console.log(state);
 
   return (
     <>

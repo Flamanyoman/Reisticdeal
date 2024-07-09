@@ -3,7 +3,7 @@ const BigHeadings = ({ color, type, text1, specialText, text2 }) => {
     <>
       {type === 'h1' ? (
         <h1
-          className={`${color} text-[53px] leading-[56px] font-[500] max-w-[650px] py-[30px] maxScreenMobile:text-[33px] maxScreenMobile:leading-[36px] maxScreenMobile:py-[15px]`}
+          className={`${color} text-[53px] leading-[56px] font-[500] max-w-[800px] py-[30px] text-center maxScreenMobile:text-[33px] maxScreenMobile:leading-[36px] maxScreenMobile:py-[15px]`}
         >
           {text1}
           <span>{specialText} </span>
@@ -11,7 +11,7 @@ const BigHeadings = ({ color, type, text1, specialText, text2 }) => {
         </h1>
       ) : (
         <h2
-          className={`${color} text-[33px] leading-[36px] font-[500] max-w-[650px] py-[30px] maxScreenMobile:text-[26px] maxScreenMobile:leading-[30px] maxScreenMobile:py-[15px]`}
+          className={`${color} text-[33px] leading-[36px] font-[500] max-w-[650px] py-[30px] maxScreenMobile:text-[26px] maxScreenMobile:text-center maxScreenMobile:leading-[30px] maxScreenMobile:py-[15px]`}
         >
           {text1}
           {specialText && (
