@@ -2,7 +2,7 @@ import { BigHeadings } from '../../components/ui/headings';
 import Texts from '../../components/ui/texts';
 import allData from '../../data/data';
 
-const HomeSection6 = () => {
+const Home_Section6 = () => {
   return (
     <div className='flex flex-col items-center relative'>
       <BigHeadings color='' type='h2' text1='What Makes Us Different?' />
@@ -27,4 +27,4 @@ const HomeSection6 = () => {
   );
 };
 
-export default HomeSection6;
+export default Home_Section6;

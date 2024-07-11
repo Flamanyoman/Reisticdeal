@@ -1,53 +1,120 @@
-import widecard1 from '../layouts/homeLayouts/assets/widecard1.png';
-import widecard2 from '../layouts/homeLayouts/assets/widecard2.png';
-import widecard3 from '../layouts/homeLayouts/assets/widecard3.png';
-import widecard4 from '../layouts/homeLayouts/assets/widecard4.png';
-import widecard5 from '../layouts/homeLayouts/assets/widecard5.png';
-import widecard6 from '../layouts/homeLayouts/assets/widecard6.png';
-
 import longcard1 from '../layouts/homeLayouts/assets/longcard1.png';
 import longcard2 from '../layouts/homeLayouts/assets/longcard2.png';
 import longcard3 from '../layouts/homeLayouts/assets/longcard3.png';
 import longcard4 from '../layouts/homeLayouts/assets/longcard4.png';
 
-import facecard1 from '../layouts/casestudylayouts/assets/FaceCard1.png';
-import facecard2 from '../layouts/casestudylayouts/assets/FaceCard2.png';
-import facecard3 from '../layouts/casestudylayouts/assets/FaceCard3.png';
-import facecard4 from '../layouts/casestudylayouts/assets/FaceCard4.png';
-import facecard5 from '../layouts/casestudylayouts/assets/FaceCard5.png';
-import facecard6 from '../layouts/casestudylayouts/assets/FaceCard6.png';
-
 const allData = {
-  widCards: [
+  services: [
     {
-      img: widecard1,
-      heading: 'Guaranteed ROI!',
-      text: "Concerned about the uncertainty of results? We are confident in our ability to deliver. That's why we offer a results-driven guarantee, ensuring that you achieve the desired outcomes.",
+      name: 'Ambulance',
+      image:
+        'https://images.unsplash.com/photo-1621201216621-262db27f9f12?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description: '',
+      types: [
+        {
+          name: 'Basic Support',
+          price: 100000,
+          img: 'https://images.pexels.com/photos/3584101/pexels-photo-3584101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Advanced support',
+          price: 125000,
+          img: 'https://images.pexels.com/photos/3719815/pexels-photo-3719815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Intensice care unit',
+          price: 350000,
+          img: 'https://images.unsplash.com/photo-1705264895993-c544cf74a0c7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+      ],
     },
+
     {
-      img: widecard2,
-      heading: "10's of Clients Vouching for us",
-      text: 'Rest assured that our promises are not empty words. We Base our strategies on data and industry insights, ensuring that the decisions we make are grounded in proven methodologies and best practises.',
+      name: 'Coffin',
+      image:
+        'https://plus.unsplash.com/premium_photo-1713985789550-c3988a65f4c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNvZmZpbnxlbnwwfDF8MHx8fDA%3D',
+      description: '',
+      types: [
+        {
+          name: 'Local wood',
+          price: 100000,
+          img: 'https://images.unsplash.com/photo-1522752622479-65eefd320386?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+        {
+          name: 'Foreign Wood',
+          price: 125000,
+          img: 'https://images.pexels.com/photos/10484349/pexels-photo-10484349.jpeg?auto=compress&cs=tinysrgb&w=600',
+        },
+        {
+          name: 'Local steel',
+          price: 350000,
+          img: 'https://plus.unsplash.com/premium_photo-1715110518550-8fbd4f1e2eaa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+        {
+          name: 'Foreign steel',
+          price: 850000,
+          img: 'https://plus.unsplash.com/premium_photo-1715110519031-14ac05e50cc2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+        {
+          name: 'Silver lined',
+          price: 2000000,
+          img: 'https://images.unsplash.com/photo-1644671801026-ab4ceb81b869?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+      ],
     },
+
     {
-      img: widecard3,
-      heading: 'Helping you build your personal brand',
-      text: 'Tired of competing with other Estate Agents for Leads? We will help you become the local celebrity so you have your own Lead Farm and can choose who you want to work with.',
-    },
-    {
-      img: widecard4,
-      heading: 'Your One Stop-Shop Solution',
-      text: 'Solutions to all your problems stopping you to become wealthy in the new Creator Economy.From generating referral quality leads to increasing your conversion rates by 20-30%.',
-    },
-    {
-      img: widecard5,
-      heading: 'Long-Term Partnerships',
-      text: 'We value long-term relationships and aim to be your trusted partner in the real estate business. We are committed to your ongoing success and will continue to support and guide you as your business grows',
-    },
-    {
-      img: widecard6,
-      heading: 'Unparalleled Support',
-      text: 'We provide exceptional support throughout your journey with us. Our team is dedicated to your success and is always available to answer your questions and provide guidance',
+      name: 'Grave stone',
+      image:
+        'https://images.unsplash.com/photo-1620405400036-ed8d0e237078?q=80&w=1428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description: '',
+      types: [
+        {
+          name: 'Obelisks',
+          price: 50000,
+          img: 'https://th.bing.com/th/id/OIP.4yw06hugpgLQE5YdG7o-xAHaGL?rs=1&pid=ImgDetMain',
+        },
+        {
+          name: 'Bench Memorials',
+          price: 50000,
+          img: 'https://images.pexels.com/photos/6495718/pexels-photo-6495718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Cremation Memorials',
+          price: 50000,
+          img: 'https://images.unsplash.com/photo-1589313629608-1e6a5d21b930?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+        {
+          name: 'Ledger Stones',
+          price: 50000,
+          img: 'https://plus.unsplash.com/premium_photo-1683141190497-28e5116f59ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        },
+        {
+          name: 'Upright Headstones',
+          price: 50000,
+          img: 'https://images.pexels.com/photos/14397940/pexels-photo-14397940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Flat Markers',
+          price: 100000,
+          img: 'https://images.pexels.com/photos/5669333/pexels-photo-5669333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Bevel Markers',
+          price: 125000,
+          img: 'https://images.pexels.com/photos/8986939/pexels-photo-8986939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Slant Markers',
+          price: 125000,
+          img: 'https://images.pexels.com/photos/3608427/pexels-photo-3608427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Monuments',
+          price: 350000,
+          img: 'https://images.pexels.com/photos/17013209/pexels-photo-17013209/free-photo-of-white-marble-holy-crosses-on-cemetery.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+      ],
     },
   ],
 
@@ -69,86 +136,6 @@ const allData = {
       text: 'Pre-Approved',
     },
   ],
-
-  faceCards: [
-    {
-      img: facecard1,
-      mainHeadings: 'Omar Megally',
-      heading: "Buyer's Agent",
-      text: 'South Calafornia',
-      buttonText: 'Check Omar’s case study',
-    },
-
-    {
-      img: facecard2,
-      mainHeadings: 'Cecilia Ramos',
-      heading: "Buyer's Agent",
-      text: 'South Calafornia',
-      buttonText: 'Check Omar’s case study',
-    },
-
-    {
-      img: facecard3,
-      mainHeadings: 'Omar Megally',
-      heading: "Buyer's Agent",
-      text: 'South Calafornia',
-      buttonText: 'Check Omar’s case study',
-    },
-
-    {
-      img: facecard4,
-      mainHeadings: 'Omar Megally',
-      heading: "Buyer's Agent",
-      text: 'South Calafornia',
-      buttonText: 'Check Omar’s case study',
-    },
-
-    {
-      img: facecard5,
-      mainHeadings: 'Omar Megally',
-      heading: "Buyer's Agent",
-      text: 'South Calafornia',
-      buttonText: 'Check Omar’s case study',
-    },
-
-    {
-      img: facecard6,
-      mainHeadings: 'Omar Megally',
-      heading: "Buyer's Agent",
-      text: 'South Calafornia',
-      buttonText: 'Check Omar’s case study',
-    },
-  ],
-
-  testimonials: [
-    {
-      name: 'Cecilia Ramos',
-      img: facecard1,
-      money: '$67k',
-      time: 'First 2 Months',
-      paragraph: [
-        {
-          mainHeadings: 'Introduction',
-          text: 'Cecilia Martinez entered the real estate industry with determination and a drive to excel. However, she soon encountered challenges that hindered her progress. Despite her efforts, Cecilia struggled to achieve her desired level of success, facing obstacles such as ineffective lead generation methods and difficulties in converting leads into deals.',
-        },
-        {
-          mainHeadings: 'The Frustration:',
-          text: "Cecilia's journey was marked by frustration as she grappled with the challenges of the real estate industry. Despite her hard work, she found it challenging to secure listings and convert leads into successful deals. This frustration led Cecilia to seek out new strategies and solutions to overcome her obstacles.",
-        },
-        {
-          mainHeadings: "Understanding Bobby's Needs:",
-          text: "Through the implementation of RealisticDeal AI's tailored solutions and Cecilia's unwavering dedication, significant improvements were observed in her business. Cecilia experienced an increase in high-quality leads and successfully converted them into successful deals. Additionally, Cecilia's productivity and time management improved, allowing her to focus on high-value tasks and grow her business further.",
-        },
-        {
-          mainHeadings: 'Conclusion:',
-          text: "Cecilia's journey serves as a testament to the transformative power of strategic coaching and AI solutions in real estate success. By embracing tailored strategies and dedicating herself to continuous improvement, Cecilia achieved remarkable results and established herself as a top performer in the industry.In her first two months, Cecilia was able to collect $67,000 in cash, demonstrating the tangible financial impact of her success and the effectiveness of the strategies implemented by RealisticDeal AI. Cecilia's story emphasizes the importance of perseverance, dedication, and leveraging innovative solutions for long-term success in the real estate industry.",
-        },
-      ],
-    },
-  ],
 };
 
 export default allData;
-
-
-

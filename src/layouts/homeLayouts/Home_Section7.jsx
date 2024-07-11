@@ -2,7 +2,7 @@ import { BigHeadings } from '../../components/ui/headings';
 import Texts from '../../components/ui/texts';
 import Omar from './assets/Omar.png';
 
-const HomeSection7 = () => {
+const Home_Section7 = () => {
   return (
     <div className='flex justify-center'>
       <div className='bg-[#1E1E1E] w-[75%] maxScreenMobile:w-full flex justify-around px-[60px] py-[45px] maxScreenMobile:flex-col maxScreenMobile:px-0 maxScreenMobile:py-[10px]'>
@@ -24,4 +24,4 @@ const HomeSection7 = () => {
   );
 };
 
-export default HomeSection7;
+export default Home_Section7;

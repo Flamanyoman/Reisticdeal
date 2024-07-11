@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { NormalButton } from '../../components/ui/buttons';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 
-const HomeSection4 = () => {
+const Home_Section4 = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   function handleWindowSizeChange() {
@@ -125,4 +125,4 @@ const HomeSection4 = () => {
   );
 };
 
-export default HomeSection4;
+export default Home_Section4;

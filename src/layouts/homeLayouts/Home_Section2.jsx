@@ -2,7 +2,7 @@ import { NormalButton } from '../../components/ui/buttons';
 import { BigHeadings } from '../../components/ui/headings';
 import Texts from '../../components/ui/texts';
 
-const HomeSection2 = () => {
+const Home_Section2 = () => {
   return (
     <div className='flex w-full maxScreenMobile:flex-col-reverse maxScreenMobile:min-h-[450px] maxScreenMobile:pb-5 h-[550px]  bg-[url("https://images.unsplash.com/photo-1619252584172-a83a949b6efd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]'>
       <div className='flex-[.55] h-full flex items-center justify-center'>
@@ -32,4 +32,4 @@ const HomeSection2 = () => {
   );
 };
 
-export default HomeSection2;
+export default Home_Section2;

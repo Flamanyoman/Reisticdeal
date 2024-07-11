@@ -1,30 +1,37 @@
+import React from 'react';
 import { BigHeadings } from '../../components/ui/headings';
 import { ImageDiv } from '../../components/ui/images';
 import Texts from '../../components/ui/texts';
 
-const Home_Section1 = () => {
+const Home_Section1 = ({ services, onPurchaseClick }) => {
   return (
     <div className='flex md:w-full w-[1050px] overflow-scroll md:overflow-hidden'>
       <div className='md:flex-[.65] maxScreenMobile:flex-[1] h-[430px] flex items-center justify-between'>
         <ImageDiv
-          src='https://images.unsplash.com/photo-1621201216621-262db27f9f12?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src={services[0].image}
+          arrayNum={0}
           width='potraite1'
           type='hover-image'
           bottomText={'Book an ambulance'}
+          onPurchaseClick={onPurchaseClick}
         />
 
         <ImageDiv
-          src='https://plus.unsplash.com/premium_photo-1713985789550-c3988a65f4c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNvZmZpbnxlbnwwfDF8MHx8fDA%3D'
+          src={services[1].image}
+          arrayNum={1}
           width='potraite1'
           type='hover-image'
           bottomText={'Order a coffin'}
+          onPurchaseClick={onPurchaseClick}
         />
 
         <ImageDiv
-          src='https://images.unsplash.com/photo-1620405400036-ed8d0e237078?q=80&w=1428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src={services[2].image}
+          arrayNum={2}
           width='potraite1'
           type='hover-image'
           bottomText={'Design a gravestone'}
+          onPurchaseClick={onPurchaseClick}
         />
       </div>
 

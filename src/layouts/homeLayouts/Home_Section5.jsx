@@ -6,7 +6,7 @@ import costumer3 from './assets/costumer3.png';
 import costumerNote from './assets/costumerNote.png';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
-const HomeSection5 = () => {
+const Home_Section5 = () => {
   return (
     <div className='flex flex-col items-center relative'>
       <NormalButton
@@ -37,4 +37,4 @@ const HomeSection5 = () => {
   );
 };
 
-export default HomeSection5;
+export default Home_Section5;

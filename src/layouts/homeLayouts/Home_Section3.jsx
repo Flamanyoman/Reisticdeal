@@ -1,7 +1,7 @@
 import { BigHeadings } from '../../components/ui/headings';
 import { ImageCard } from '../../components/ui/images';
 
-const HomeSection3 = () => {
+const Home_Section3 = () => {
   return (
     <div>
       <div className='w-full flex items-center justify-center'>
@@ -97,4 +97,4 @@ const HomeSection3 = () => {
   );
 };
 
-export default HomeSection3;
+export default Home_Section3;

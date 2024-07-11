@@ -1,35 +1,46 @@
 import { NormalButton } from './buttons';
 import { BigHeadings } from './headings';
 import Texts from './texts';
+import allData from '../../data/data';
 
-const ImageDiv = ({ src, width, type, bottomText }) => {
+const ImageDiv = ({
+  src,
+  width,
+  type,
+  bottomText,
+  arrayNum,
+  onPurchaseClick,
+}) => {
+  const handlePurchaseClick = () => {
+    const serviceData = allData.services[arrayNum].types;
+    onPurchaseClick(serviceData);
+  };
+
   return type === 'hover-image' ? (
     <div
-      className={`relative ${width}  cursor-pointer image__div overflow-hidden`}
+      className={`relative ${width} cursor-pointer image__div overflow-hidden`}
     >
       <img
         src={src}
         className={`w-full h-full absolute top-0 left-0`}
         alt='Saint best image'
       />
-
       <span className='w-full h-full absolute z-10 flex items-center justify-center -top-full maxScreenMobile:top-0 hover:top-0 hover:bg-[#000000c0]'>
         <div className='scale-[0.8]'>
           <NormalButton
             colorType='white'
             text='Purchase'
-            click={() => console.log('clicked circle')}
+            click={handlePurchaseClick}
           />
         </div>
       </span>
-
       <div className='absolute bottom-[25px] w-full flex items-center justify-center'>
         <Texts type={'xl'} text={bottomText} color={'white'} />
       </div>
     </div>
   ) : (
     <div
-      className={`relative ${width} h-[544.26px]  cursor-pointer image__div overflow-hidden`}
+      className={`relative ${width} h-[544.26px] cursor-pointer image__div overflow-hidden`}
     >
       <img
         src={src}
@@ -40,7 +51,6 @@ const ImageDiv = ({ src, width, type, bottomText }) => {
         <div className='w-full flex items-start pl-4 mb-[20px]'>
           <Texts type={'xl'} text={bottomText} color={'white'} />
         </div>
-
         <div className='w-full flex items-start pl-4'>
           <Texts
             type={'s'}
