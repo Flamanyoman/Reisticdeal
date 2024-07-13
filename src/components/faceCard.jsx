@@ -12,11 +12,7 @@ const FaceCard = ({ img, mainHeadings, heading, text, buttonText }) => {
 
       <Texts color='' type='s' text={text} />
       <span className='py-[10px]'>
-        <NormalButton
-          colorType='black_green'
-          text={buttonText}
-          click={() => console.log('clicked circle')}
-        />
+        <NormalButton colorType='black_green' text={buttonText} />
       </span>
     </div>
   );

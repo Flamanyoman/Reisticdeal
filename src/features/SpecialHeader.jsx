@@ -19,11 +19,7 @@ const SpecialHeader = () => {
         />
         <span className='m-[20px]'></span>
 
-        <NormalButton
-          colorType='white'
-          text='Book a service'
-          click={() => console.log('clicked circle')}
-        />
+        <NormalButton colorType='white' text='Book a service' />
       </div>
     </div>
   );

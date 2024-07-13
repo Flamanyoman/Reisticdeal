@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Adding transition to all elements */
+* {
+  transition: all 0.5s ease;
+}
+
+/* Pulsing animation keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 body {
   color: black;
   background-color: white;
@@ -24,6 +42,14 @@ footer {
   padding: 25px 75px;
 }
 
+button.black,
+button.white,
+button.brand {
+  background-color: black;
+  color: white;
+}
+
+/* Button colors */
 button.black {
   background-color: black;
   color: white;
@@ -125,7 +151,7 @@ img {
   padding-bottom: 50px;
 }
 
-/* mobile version */
+/* Mobile version styles */
 @media only screen and (max-width: 600px) {
   section,
   footer {
@@ -160,6 +186,7 @@ img {
   }
 }
 
+/* Hover effect for image div */
 .image__div:hover span {
   background-color: #000000c0;
   top: 0;
@@ -174,7 +201,7 @@ img {
   }
 }
 
-/* mobile view and screens */
+/* Mobile view and screens */
 @media screen and (max-width: 640px) {
   section,
   footer {
@@ -196,3 +223,22 @@ img {
     margin-bottom: 20px;
   }
 }
+
+/* Pulsing animation on button click */
+button:active {
+  animation: pulse 0.2.5s;
+}
+
+@keyframes growWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 320px;
+  }
+}
+
+.animate-grow {
+  animation: growWidth 0.5s ease-out forwards;
+}
+

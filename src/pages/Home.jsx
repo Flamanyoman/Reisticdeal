@@ -39,10 +39,10 @@ const Home = () => {
           />
         </section>
         <section>
-          <Home_Section2 />
+          <Home_Section2 onPurchaseClick={handlePurchaseClick} />
         </section>
         <section>
-          <Home_Section3 />
+          <Home_Section3 onPurchaseClick={handlePurchaseClick} />
         </section>
         <section className='bg-[#1E1E1E]'>
           <Home_Section4 />

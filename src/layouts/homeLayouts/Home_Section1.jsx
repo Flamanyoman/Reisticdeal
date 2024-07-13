@@ -5,8 +5,8 @@ import Texts from '../../components/ui/texts';
 
 const Home_Section1 = ({ services, onPurchaseClick }) => {
   return (
-    <div className='flex md:w-full w-[1050px] overflow-scroll md:overflow-hidden'>
-      <div className='md:flex-[.65] maxScreenMobile:flex-[1] h-[430px] flex items-center justify-between'>
+    <div className='flex md:w-full w-[1050px] overflow-scroll no-scrollbar md:overflow-hidden'>
+      <div className='md:flex-[.65] maxScreenMobile:flex-[1] h-[430px] flex items-center justify-between no-scrollbar'>
         <ImageDiv
           src={services[0].image}
           arrayNum={0}

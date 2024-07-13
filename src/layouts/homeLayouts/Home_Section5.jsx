@@ -9,10 +9,7 @@ import { FaLongArrowAltRight } from 'react-icons/fa';
 const Home_Section5 = () => {
   return (
     <div className='flex flex-col items-center relative'>
-      <NormalButton
-        text='Real Stories, Real Memories'
-        click={() => console.log('clicked')}
-      />
+      <NormalButton text='Real Stories, Real Memories' />
 
       <BigHeadings color='' type='h2' text1='See Why Families Trust Us!' />
 
@@ -30,7 +27,6 @@ const Home_Section5 = () => {
         <CircleButton
           colorType='lightgreen_green'
           svg={<FaLongArrowAltRight />}
-          click={() => console.log('clicked circle')}
         />
       </span>
     </div>

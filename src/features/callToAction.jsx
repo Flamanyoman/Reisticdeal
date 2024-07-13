@@ -21,11 +21,7 @@ const CallToAction = () => {
       />
 
       <span className='py-[30px]'>
-        <NormalButton
-          colorType='green_black'
-          text='Book a Call'
-          click={() => console.log('clicked circle')}
-        />
+        <NormalButton colorType='green_black' text='Book a Call' />
       </span>
     </div>
   );
