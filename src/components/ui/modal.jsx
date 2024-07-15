@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from 'react';
-import CurrencyFormat from 'react-currency-format';
 import { cartContext } from '../../context/cartContext';
 
 const Modal = ({ isOpen, onClose, data }) => {
@@ -43,13 +42,7 @@ const Modal = ({ isOpen, onClose, data }) => {
               className='relative flex items-center justify-center aspect-square'
             >
               <p className='s text-white drop-shadow-[0_48px_48px_rgba(0,0,0,1)] absolute top-[12px] left-[12px] z-10 bg-[rgba(0,0,0,0.16)] p-2'>
-                <CurrencyFormat
-                  value={item.price}
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'₦'}
-                  renderText={(value) => <div>{value}</div>}
-                />
+                {item.name}
               </p>
               <img
                 src={item.img}

@@ -1,4 +1,4 @@
-import CurrencyFormat from 'react-currency-format';
+import { NumericFormat } from 'react-number-format';
 
 const CartItem = ({ item, i, handleRemove }) => {
   return (
@@ -17,14 +17,14 @@ const CartItem = ({ item, i, handleRemove }) => {
         </span>
 
         <span className='w-[30%] overflow-ellipsis'>
-          <CurrencyFormat
+          <NumericFormat
             value={item.price}
-            displayType={'text'}
-            thousandSeparator={true}
-            prefix={'₦'}
-            renderText={(value) => (
-              <div className='overflow-ellipsis'>{value}</div>
-            )}
+            prefix='₦'
+            displayType='text'
+            thousandSeparator=','
+            onValueChange={(values, sourceInfo) => {
+              console.log(values, sourceInfo);
+            }}
           />
         </span>
         <div className='flex justify-between items-center'>
