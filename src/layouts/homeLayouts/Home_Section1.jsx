@@ -35,12 +35,13 @@ const Home_Section1 = ({ services, onPurchaseClick }) => {
         />
       </div>
 
-      <div className='md:flex-[.35] min-h-[430px] flex flex-col items-end justify-center maxScreenMobile:w-[300px]'>
-        <BigHeadings type='h2' text1='Passing of a Loved One' />
+      <div className='md:flex-[.35] mx-[10px] min-h-[430px] flex flex-col justify-center items-center maxScreenMobile:w-[300px]'>
+        <BigHeadings type='h2' text1='We Pay Our Respects' />
 
         <Texts
           type='l'
-          text='In times like this, let us handle the burden of arrangement'
+          align={'center'}
+          text='It is always painful to lose someone. We want to help you through this trying period with tender loving care. '
         />
       </div>
     </div>

@@ -9,13 +9,13 @@ const SpecialHeader = () => {
         <BigHeadings
           color='bigheader_white'
           type='h1'
-          text1='Here’s how you can Become a Local Celebrity and Close an Extra 10+ Deals'
+          text1='Welcome to Cent Best Wellness, where we combine care and cost.'
         />
 
         <Texts
           color='white'
           type='xl'
-          text='Get your own Client Acquisition Infrastructure Build Out... Without Wasting Your Time Or Money-'
+          text='We understand that losing a loved one is incredibly painful. Our goal is to support you during this sorrowful time with care, compassion, and quality services.'
         />
         <span className='m-[20px]'></span>
 

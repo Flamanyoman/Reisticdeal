@@ -2,6 +2,42 @@ import longcard1 from '../layouts/homeLayouts/assets/longcard1.png';
 import longcard2 from '../layouts/homeLayouts/assets/longcard2.png';
 import longcard3 from '../layouts/homeLayouts/assets/longcard3.png';
 import longcard4 from '../layouts/homeLayouts/assets/longcard4.png';
+import RollsRoyce from '../assets/R.jpg';
+import Escalade from '../assets/Escalade.jpg';
+
+import Sienna from '../assets/Sienna.jpg';
+import Expert from '../assets/Expert.jpg';
+import Hiace from '../assets/Hiace.jpg';
+
+import LocalSteel from '../assets/Local steel.jpg';
+import LocalWood from '../assets/Local wood.jpg';
+import ForiegnSteel from '../assets/Foriegn steel.webp';
+import ForiegnWood from '../assets/Foriegn wood.jpg';
+
+import TilesHeadstone from '../assets/Tiles headstone.jpg';
+import ConcretHeadstone from '../assets/Concret headstone.jpg';
+import WoodHeadstone from '../assets/Wood headstone.jpg';
+import MarbleHeadstone from '../assets/Marble headstone.jpg';
+import SlateHeadstone from '../assets/Slate headstone.jpg';
+import StatueHeadstone from '../assets/Statue headstone.jpg';
+
+import Hearse from '../assets/Hearse.webp';
+
+import LoweringDevice from '../assets/Lowering device.jpg';
+
+import Decoration from '../assets/Decoration.jpg';
+
+import PallBearers from '../assets/Pall bearers.jpg';
+
+const Billboards =
+  'https://images.pexels.com/photos/9740620/pexels-photo-9740620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+
+const Wreath =
+  'https://plus.unsplash.com/premium_photo-1695751302118-64e1aabbd539?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import LilliesWreath from '../assets/Lilies wreath.jpg';
+import RosesWreath from '../assets/Roses wreath.jpg';
+import OrchidsWreath from '../assets/Orchids wreath.jpg';
+import GadoliWreath from '../assets/Gadoli wreath.jpg';
 
 const allData = {
   services: [
@@ -12,21 +48,21 @@ const allData = {
       description: '',
       types: [
         {
-          name: 'Basic Support',
+          name: 'Sienna',
           price: 100000,
-          img: 'https://images.pexels.com/photos/3584101/pexels-photo-3584101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          img: Sienna,
           type: 'Ambulance',
         },
         {
-          name: 'Advanced support',
+          name: 'Peugeot Expert',
           price: 125000,
-          img: 'https://images.pexels.com/photos/3719815/pexels-photo-3719815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          img: Expert,
           type: 'Ambulance',
         },
         {
-          name: 'Intensice care unit',
+          name: 'Toyota Hiace',
           price: 350000,
-          img: 'https://images.unsplash.com/photo-1705264895993-c544cf74a0c7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          img: Hiace,
           type: 'Ambulance',
         },
       ],
@@ -41,31 +77,25 @@ const allData = {
         {
           name: 'Local wood',
           price: 100000,
-          img: 'https://images.unsplash.com/photo-1522752622479-65eefd320386?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          img: LocalWood,
           type: 'Coffin',
         },
         {
           name: 'Foreign Wood',
           price: 125000,
-          img: 'https://images.pexels.com/photos/10484349/pexels-photo-10484349.jpeg?auto=compress&cs=tinysrgb&w=600',
+          img: ForiegnWood,
           type: 'Coffin',
         },
         {
           name: 'Local steel',
           price: 350000,
-          img: 'https://plus.unsplash.com/premium_photo-1715110518550-8fbd4f1e2eaa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          img: LocalSteel,
           type: 'Coffin',
         },
         {
           name: 'Foreign steel',
           price: 850000,
-          img: 'https://plus.unsplash.com/premium_photo-1715110519031-14ac05e50cc2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          type: 'Coffin',
-        },
-        {
-          name: 'Silver lined',
-          price: 2000000,
-          img: 'https://images.unsplash.com/photo-1644671801026-ab4ceb81b869?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          img: ForiegnSteel,
           type: 'Coffin',
         },
       ],
@@ -78,57 +108,39 @@ const allData = {
       description: '',
       types: [
         {
-          name: 'Obelisks',
+          name: 'Concrete',
+          price: 40000,
+          img: ConcretHeadstone,
+          type: 'Grave',
+        },
+        {
+          name: 'Wood',
           price: 50000,
-          img: 'https://th.bing.com/th/id/OIP.4yw06hugpgLQE5YdG7o-xAHaGL?rs=1&pid=ImgDetMain',
+          img: WoodHeadstone,
           type: 'Grave',
         },
         {
-          name: 'Bench Memorials',
-          price: 50000,
-          img: 'https://images.pexels.com/photos/6495718/pexels-photo-6495718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          name: 'Tiles',
+          price: 80000,
+          img: TilesHeadstone,
           type: 'Grave',
         },
         {
-          name: 'Cremation Memorials',
-          price: 50000,
-          img: 'https://images.unsplash.com/photo-1589313629608-1e6a5d21b930?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          name: 'Marble',
+          price: 175000,
+          img: MarbleHeadstone,
           type: 'Grave',
         },
         {
-          name: 'Ledger Stones',
-          price: 50000,
-          img: 'https://plus.unsplash.com/premium_photo-1683141190497-28e5116f59ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          name: 'Slate',
+          price: 250000,
+          img: SlateHeadstone,
           type: 'Grave',
         },
         {
-          name: 'Upright Headstones',
-          price: 50000,
-          img: 'https://images.pexels.com/photos/14397940/pexels-photo-14397940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-          type: 'Grave',
-        },
-        {
-          name: 'Flat Markers',
-          price: 100000,
-          img: 'https://images.pexels.com/photos/5669333/pexels-photo-5669333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-          type: 'Grave',
-        },
-        {
-          name: 'Bevel Markers',
-          price: 125000,
-          img: 'https://images.pexels.com/photos/8986939/pexels-photo-8986939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-          type: 'Grave',
-        },
-        {
-          name: 'Slant Markers',
-          price: 125000,
-          img: 'https://images.pexels.com/photos/3608427/pexels-photo-3608427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-          type: 'Grave',
-        },
-        {
-          name: 'Monuments',
-          price: 350000,
-          img: 'https://images.pexels.com/photos/17013209/pexels-photo-17013209/free-photo-of-white-marble-holy-crosses-on-cemetery.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          name: 'Statue',
+          price: 500000,
+          img: StatueHeadstone,
           type: 'Grave',
         },
       ],
@@ -147,6 +159,126 @@ const allData = {
           type: 'Website',
         },
       ],
+    },
+
+    // Hearse (4)
+    {
+      image: Hearse,
+      description:
+        'Our hearses are well maintained and built to offer a befitting send off to your dear ones. Our drivers are well trained to provide comfort and respect to the families and friends of the deceased',
+      tagLine: 'Order a Hearse',
+      types: [
+        { name: 'Rolls Royce', price: 35000, img: RollsRoyce, type: 'Hearse' },
+        { name: 'Excalade', price: 35000, img: Escalade, type: 'Hearse' },
+      ],
+    },
+
+    // Lowering Device (5)
+    {
+      image: LoweringDevice,
+      description:
+        'Our lowering devices are designed to provide a dignified and respectable lowering of the casket. Made with accuracy and durability, they facilitate a dignified and peaceful transfer to the final destination.',
+      tagLine: 'Lowering Device',
+      types: [
+        {
+          name: 'Lowering Device',
+          price: 'Negotiable',
+          img: LoweringDevice,
+          type: 'Device',
+        },
+      ],
+    },
+
+    // Planning and Decoration (6)
+    {
+      image: Decoration,
+      description:
+        'Our hall decoration service transforms your venue into a beautiful space, ensuring every detail reflects the dignity and respect your loved one deserves.',
+      tagLine: 'Planning and Decoration',
+      types: [
+        {
+          name: 'Planning and Decoration',
+          price: 'Negotiable',
+          img: Decoration,
+          type: 'Decoration',
+        },
+      ],
+    },
+
+    // Pall Bearers (7)
+    {
+      image: PallBearers,
+      description:
+        'Our pallbearers ensure caskets and floral arrangements are transported with dignity. They coordinate movements during services to ensure a smooth ceremony, treating every detail with professionalism.',
+      tagLine: 'Pall Bearers',
+      types: [
+        {
+          name: 'Pall Bearers',
+          price: 20000,
+          img: PallBearers,
+          type: 'Service',
+        },
+      ],
+    },
+
+    // Billboards and Advertisements (8)
+    {
+      image: Billboards,
+      description:
+        'Reach a wider audience with our Billboards and Advertisements service. We offer strategic placement and eye-catching designs to effectively convey your message.',
+      tagLine: 'Billboards and Advertisements',
+      types: [
+        {
+          name: 'Billboards and Advertisements',
+          price: 10000,
+          img: Billboards,
+          type: 'Billboards',
+        },
+      ],
+    },
+
+    // Wreath Bouquet (9)
+    {
+      image: Wreath,
+      description:
+        'Our beautiful wreath bouquets are crafted with care, providing a meaningful and elegant tribute to honor the memory of your loved one.',
+      tagLine: 'Wreath Bouquet',
+      types: [
+        {
+          name: 'Roses Wreath',
+          price: 15000,
+          img: RosesWreath,
+          type: 'Wreath',
+        },
+        {
+          name: 'Lillies Wreath',
+          price: 15000,
+          img: LilliesWreath,
+          type: 'Wreath',
+        },
+        {
+          name: 'Orchids Wreath',
+          price: 15000,
+          img: OrchidsWreath,
+          type: 'Wreath',
+        },
+        {
+          name: 'Gadoli Wreath',
+          price: 15000,
+          img: GadoliWreath,
+          type: 'Wreath',
+        },
+      ],
+    },
+
+    // Repatriation (10)
+    {
+      image:
+        'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description:
+        'Our repatriation service ensures the dignified and respectful transportation of your loved one across long distances by flight.',
+      tagLine: 'Book an Air Repatriation',
+      types: [],
     },
   ],
 

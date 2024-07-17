@@ -50,7 +50,7 @@ const Modal = ({ isOpen, onClose, data }) => {
                 className='absolute w-full h-full top-0 left-0 object-cover'
               />
               <button
-                className='white px-[18px] py-[4.5px] rounded-[7px] maxScreenMobile:py-[10px] maxScreenMobile:px-[20px] absolute bottom-[12px] right-[12px]'
+                className='white px-[18px] py-[4.5px] maxScreenMobile:mx-auto rounded-[7px] maxScreenMobile:py-[10px] maxScreenMobile:px-[20px] absolute bottom-[12px] right-[12px] maxScreenMobile:scale-[.68]'
                 onClick={() => handleAddToCart(item)}
               >
                 Add To Cart

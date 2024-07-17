@@ -42,7 +42,10 @@ const Home = () => {
           <Home_Section2 onPurchaseClick={handlePurchaseClick} />
         </section>
         <section>
-          <Home_Section3 onPurchaseClick={handlePurchaseClick} />
+          <Home_Section3
+            services={allData.services}
+            onPurchaseClick={handlePurchaseClick}
+          />
         </section>
         <section className='bg-[#1E1E1E]'>
           <Home_Section4 />

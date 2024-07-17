@@ -16,7 +16,9 @@ const Home_Section7 = () => {
           <Texts
             color='white'
             type='s'
-            text='Lorem ipsum dolor sit amet consectetur. Purus imperdiet quis tincidunt blandit. Id turpis elit suspendisse consectetur Purus imperdiet quis tincidunt blandit. Id turpis elit suspendisse consectetur orem turpis elit suspen'
+            text='
+            Dignified Farewell: this captures the  company’s commitment to honoring the deceased and offering professional funeral services that are befitting of the departed soul. 
+           '
           />
         </div>
       </div>

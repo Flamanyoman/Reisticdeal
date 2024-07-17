@@ -11,14 +11,19 @@ const Footer = () => {
   return (
     <footer className='flex justify-between bg-[#1E1E1E] py-[75px] maxScreenMobile:flex-col'>
       <div className='w-1/2 flex flex-col justify-between pr-[80px] maxScreenMobile:w-full maxScreenMobile:pr-0'>
-        <BigHeadings color='bigheader_white' type='h2' text1='Reisticdeal' />
+        <BigHeadings
+          color='bigheader_white'
+          type='h2'
+          text1='Cent Best Wellness'
+        />
         <Texts
           color='white'
           type='l'
-          text='Lorem ipsum dolor sit amet consectetur. Purus imperdiet quis tincidunt blandit. Id turpis elit suspendisse consectetur Purus imperdiet quis'
+          align={'left'}
+          text="Our company's focus is on healthcare and end-of-life services that are exceptional, compassionate, and dignified for patients and their families."
         />
 
-        <span className='flex items-center justify-between w-[190px] pt-[30px]'>
+        <span className='flex items-center justify-between maxScreenMobile:justify-around w-[190px] pt-[30px] maxScreenMobile:w-full'>
           <span className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'>
             <FaGoogle />
           </span>

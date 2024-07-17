@@ -1,5 +1,4 @@
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
-import { TiShoppingCart } from 'react-icons/ti';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const CartPart = ({ show, setShow, cart, open, setOpen }) => {
