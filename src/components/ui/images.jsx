@@ -40,11 +40,11 @@ const ImageDiv = ({
     </div>
   ) : (
     <div
-      className={`relative ${width} h-[544.26px] cursor-pointer image__div overflow-hidden`}
+      className={`relative ${width} h-auto cursor-pointer image__div overflow-hidden`}
     >
       <img
         src={src}
-        className={`w-full h-full absolute top-0 left-0`}
+        className={`w-full h-auto top-0 left-0`}
         alt='Saint best image'
       />
       <div className='absolute bottom-[25px] w-full flex flex-col items-center justify-center'>
@@ -54,9 +54,9 @@ const ImageDiv = ({
         <div className='w-full flex items-start pl-4'>
           <Texts
             type={'s'}
-            text={
-              'This is going to be a one or two lines biography, for example: Professor who touched many lives'
-            }
+            // text={
+            //   'This is going to be a one or two lines biography, for example: Professor who touched many lives'
+            // }
             align={'left'}
             color={'white'}
           />

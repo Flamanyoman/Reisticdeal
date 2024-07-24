@@ -10,6 +10,7 @@ import Home_Section4 from '../layouts/homeLayouts/Home_Section4';
 import Home_Section6 from '../layouts/homeLayouts/Home_Section6';
 import Home_Section7 from '../layouts/homeLayouts/Home_Section7';
 import Modal from '../components/ui/modal';
+import Home_Section3_5 from '../layouts/homeLayouts/Home_Section3_5';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,6 +44,12 @@ const Home = () => {
         </section>
         <section>
           <Home_Section3
+            services={allData.services}
+            onPurchaseClick={handlePurchaseClick}
+          />
+        </section>
+        <section>
+          <Home_Section3_5
             services={allData.services}
             onPurchaseClick={handlePurchaseClick}
           />

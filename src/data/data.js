@@ -29,6 +29,8 @@ import Decoration from '../assets/Decoration.jpg';
 
 import PallBearers from '../assets/Pall bearers.jpg';
 
+const CameraMan =
+  'https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 const Billboards =
   'https://images.pexels.com/photos/9740620/pexels-photo-9740620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
 
@@ -38,6 +40,8 @@ import LilliesWreath from '../assets/Lilies wreath.jpg';
 import RosesWreath from '../assets/Roses wreath.jpg';
 import OrchidsWreath from '../assets/Orchids wreath.jpg';
 import GadoliWreath from '../assets/Gadoli wreath.jpg';
+
+import Repatration from '../assets/repatriation.jpg';
 
 const allData = {
   services: [
@@ -189,6 +193,22 @@ const allData = {
       ],
     },
 
+    // images and video coverage (7)
+    {
+      image: CameraMan,
+      description:
+        'Find the best Camara men to cover the event to cement the memory of laying your loved one to rest forever',
+      tagLine: 'Video and Camera Coverage',
+      types: [
+        {
+          Name: 'Video and Camera Coverage',
+          price: 'Negotiable',
+          img: CameraMan,
+          type: 'Photography',
+        },
+      ],
+    },
+
     // Planning and Decoration (6)
     {
       image: Decoration,
@@ -278,7 +298,14 @@ const allData = {
       description:
         'Our repatriation service ensures the dignified and respectful transportation of your loved one across long distances by flight.',
       tagLine: 'Book an Air Repatriation',
-      types: [],
+      types: [
+        {
+          name: 'Air Repatriation',
+          price: 550000,
+          img: Repatration,
+          type: 'Repatriation',
+        },
+      ],
     },
   ],
 

@@ -23,7 +23,7 @@
 body {
   color: black;
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'KochRivoli';
   font-optical-sizing: auto;
   font-style: normal;
   padding: 0;
@@ -241,4 +241,3 @@ button:active {
 .animate-grow {
   animation: growWidth 0.5s ease-out forwards;
 }
-
