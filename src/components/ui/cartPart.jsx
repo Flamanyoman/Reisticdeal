@@ -12,11 +12,30 @@ const CartPart = ({ show, setShow, cart, open, setOpen }) => {
     e.stopPropagation();
     const number = '+2348132446079';
 
-    const message = `I would like to order:\n${cart
-      .map(
-        (item) => `${item.name} ${item.type}, for the price of ${item.price}`
-      )
-      .join('\n')}`;
+    // Group items by name and type
+    const groupedItems = cart.reduce((acc, item) => {
+      const key = `${item.name}-${item.type}`;
+      if (!acc[key]) {
+        acc[key] = { ...item, count: 0 };
+      }
+      acc[key].count += 1;
+      return acc;
+    }, {});
+
+    // Generate message
+    const items = Object.values(groupedItems)
+      .map((item, index, array) => {
+        const itemDescription = `${item.count > 1 ? item.count + ' ' : ''}${
+          item.name
+        } which is a type of ${item.type}`;
+        if (index === array.length - 1 && array.length > 1) {
+          return `and ${itemDescription}`;
+        }
+        return itemDescription;
+      })
+      .join(', ');
+
+    const message = `I would like to order the following: ${items}`;
 
     const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 

@@ -23,7 +23,7 @@ const ImageDiv = ({
       <img
         src={src}
         className={`w-full h-full absolute top-0 left-0`}
-        alt='Saint best image'
+        alt='Cent Best image'
       />
       <span className='w-full h-full absolute z-10 flex items-center justify-center -top-full maxScreenMobile:top-0 hover:top-0 hover:bg-[#000000c0]'>
         <div className='scale-[0.8]'>
@@ -42,11 +42,7 @@ const ImageDiv = ({
     <div
       className={`relative ${width} h-auto cursor-pointer image__div overflow-hidden`}
     >
-      <img
-        src={src}
-        className={`w-full h-auto top-0 left-0`}
-        alt='Saint best image'
-      />
+      <img src={src} className={`w-full h-auto top-0 left-0`} alt='Cent Best' />
       <div className='absolute bottom-[25px] w-full flex flex-col items-center justify-center'>
         <div className='w-full flex items-start pl-4 mb-[20px]'>
           <Texts type={'xl'} text={bottomText} color={'white'} />
@@ -69,7 +65,7 @@ const ImageDiv = ({
 const ImageCard = ({ width, src, header, text, button, click }) => {
   return (
     <div className={`${width}  cursor-pointer image__div overflow-hidden`}>
-      <img src={src} className={`w-full aspect-video`} alt='Saint best image' />
+      <img src={src} className={`w-full aspect-video`} alt='Cent image' />
 
       <div className='w-full min-h-[340px] maxScreenMobile:min-h-[270px] flex flex-col justify-between items-center p-[20px] maxScreenMobile:py-[15px]'>
         <div className='w-full flex items-start h-[80px] maxScreenMobile:h-[50px]'>

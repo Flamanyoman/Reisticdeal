@@ -11,6 +11,7 @@ import Home_Section6 from '../layouts/homeLayouts/Home_Section6';
 import Home_Section7 from '../layouts/homeLayouts/Home_Section7';
 import Modal from '../components/ui/modal';
 import Home_Section3_5 from '../layouts/homeLayouts/Home_Section3_5';
+import useImageSlider from '../components/courosel';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,11 +27,20 @@ const Home = () => {
     setModalData(null);
   };
 
+  const currentImage = useImageSlider();
+
   return (
     <div className='fillwindow'>
-      <section className='bg-[url("https://images.unsplash.com/photo-1518343161123-c7e9ab4dc4da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")] bg-no-repeat bg-cover bg-center overflow-hidden sticky top-0 z-[-1]'>
-        <Navbar />
-        <SpecialHeader />
+      <section
+        className={` bg-no-repeat bg-cover bg-center overflow-hidden sticky top-0 z-[-1]`}
+        style={{ backgroundImage: `url(${currentImage})` }}
+      >
+        <div className='absolute inset-0 bg-black opacity-80 z-0'></div>{' '}
+        {/* Overlay */}
+        <div className='relative z-10'>
+          <Navbar />
+          <SpecialHeader />
+        </div>
       </section>
       <div className='bg-white sticky top-[90px]'>
         <section className='w-full overflow-scroll'>

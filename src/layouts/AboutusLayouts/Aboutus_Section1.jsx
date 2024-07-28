@@ -2,7 +2,6 @@ import { BigHeadings } from '../../components/ui/headings';
 import Texts from '../../components/ui/texts';
 import aboutUs2 from './assets/aboutus2.png';
 import aboutUs3 from './assets/aboutus3.png';
-import VideoThumbnail from '../../components/videothumbnail';
 
 const Aboutus_Section = () => {
   return (
@@ -16,9 +15,7 @@ const Aboutus_Section = () => {
           />
         </span>
 
-        <span className='w-1/2 flex items-center justify-center maxScreenMobile:w-full'>
-          <VideoThumbnail id='XF1XIEOKlaE' />
-        </span>
+        <span className='w-1/2 flex items-center justify-center maxScreenMobile:w-full'></span>
       </div>
 
       <div className='flex-grow  min-h-[350px] flex flex-row-reverse w-full maxScreenMobile:flex-col-reverse maxScreenMobile:py-[25px]'>

@@ -43,6 +43,24 @@ import GadoliWreath from '../assets/Gadoli wreath.jpg';
 
 import Repatration from '../assets/repatriation.jpg';
 
+// Family Images
+import famImg1 from '../assets/Fam img 1.jpg';
+import famImg2 from '../assets/Fam img 2.jpg';
+import famImg3 from '../assets/Fam img 3.jpg';
+import famImg4 from '../assets/Fam img 4.jpg';
+import famImg5 from '../assets/Fam img 5.jpg';
+import famImg6 from '../assets/Fam img 6.jpg';
+import famImg7 from '../assets/Fam img 7.jpg';
+import famImg8 from '../assets/Fam img 8.jpg';
+
+// Coffin Images
+import cofImg1 from '../assets/Cof img 1.jpg';
+import cofImg2 from '../assets/Cof img 2.jpg';
+import cofImg3 from '../assets/Cof img 3.jpg';
+import cofImg4 from '../assets/Cof img 4.jpg';
+import cofImg5 from '../assets/Cof img 5.jpg';
+import cofImg6 from '../assets/Cof img 6.jpg';
+
 const allData = {
   services: [
     // Ambulance (0)
@@ -53,19 +71,19 @@ const allData = {
       types: [
         {
           name: 'Sienna',
-          price: 100000,
+          price: 'Negotiable',
           img: Sienna,
           type: 'Ambulance',
         },
         {
           name: 'Peugeot Expert',
-          price: 125000,
+          price: 'Negotiable',
           img: Expert,
           type: 'Ambulance',
         },
         {
           name: 'Toyota Hiace',
-          price: 350000,
+          price: 'Negotiable',
           img: Hiace,
           type: 'Ambulance',
         },
@@ -80,25 +98,25 @@ const allData = {
       types: [
         {
           name: 'Local wood',
-          price: 100000,
+          price: 'Negotiable',
           img: LocalWood,
           type: 'Coffin',
         },
         {
           name: 'Foreign Wood',
-          price: 125000,
+          price: 'Negotiable',
           img: ForiegnWood,
           type: 'Coffin',
         },
         {
           name: 'Local steel',
-          price: 350000,
+          price: 'Negotiable',
           img: LocalSteel,
           type: 'Coffin',
         },
         {
           name: 'Foreign steel',
-          price: 850000,
+          price: 'Negotiable',
           img: ForiegnSteel,
           type: 'Coffin',
         },
@@ -113,37 +131,37 @@ const allData = {
       types: [
         {
           name: 'Concrete',
-          price: 40000,
+          price: 'Negotiable',
           img: ConcretHeadstone,
           type: 'Grave',
         },
         {
           name: 'Wood',
-          price: 50000,
+          price: 'Negotiable',
           img: WoodHeadstone,
           type: 'Grave',
         },
         {
           name: 'Tiles',
-          price: 80000,
+          price: 'Negotiable',
           img: TilesHeadstone,
           type: 'Grave',
         },
         {
           name: 'Marble',
-          price: 175000,
+          price: 'Negotiable',
           img: MarbleHeadstone,
           type: 'Grave',
         },
         {
           name: 'Slate',
-          price: 250000,
+          price: 'Negotiable',
           img: SlateHeadstone,
           type: 'Grave',
         },
         {
           name: 'Statue',
-          price: 500000,
+          price: 'Negotiable',
           img: StatueHeadstone,
           type: 'Grave',
         },
@@ -158,7 +176,7 @@ const allData = {
       types: [
         {
           name: 'Tribute Site',
-          price: 10000,
+          price: 'Negotiable',
           img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           type: 'Website',
         },
@@ -172,8 +190,18 @@ const allData = {
         'Our hearses are well maintained and built to offer a befitting send off to your dear ones. Our drivers are well trained to provide comfort and respect to the families and friends of the deceased',
       tagLine: 'Order a Hearse',
       types: [
-        { name: 'Rolls Royce', price: 35000, img: RollsRoyce, type: 'Hearse' },
-        { name: 'Excalade', price: 35000, img: Escalade, type: 'Hearse' },
+        {
+          name: 'Rolls Royce',
+          price: 'Negotiable',
+          img: RollsRoyce,
+          type: 'Hearse',
+        },
+        {
+          name: 'Excalade',
+          price: 'Negotiable',
+          img: Escalade,
+          type: 'Hearse',
+        },
       ],
     },
 
@@ -234,7 +262,7 @@ const allData = {
       types: [
         {
           name: 'Pall Bearers',
-          price: 20000,
+          price: 'Negotiable',
           img: PallBearers,
           type: 'Service',
         },
@@ -250,7 +278,7 @@ const allData = {
       types: [
         {
           name: 'Billboards and Advertisements',
-          price: 10000,
+          price: 'Negotiable',
           img: Billboards,
           type: 'Billboards',
         },
@@ -266,25 +294,25 @@ const allData = {
       types: [
         {
           name: 'Roses Wreath',
-          price: 15000,
+          price: 'Negotiable',
           img: RosesWreath,
           type: 'Wreath',
         },
         {
           name: 'Lillies Wreath',
-          price: 15000,
+          price: 'Negotiable',
           img: LilliesWreath,
           type: 'Wreath',
         },
         {
           name: 'Orchids Wreath',
-          price: 15000,
+          price: 'Negotiable',
           img: OrchidsWreath,
           type: 'Wreath',
         },
         {
           name: 'Gadoli Wreath',
-          price: 15000,
+          price: 'Negotiable',
           img: GadoliWreath,
           type: 'Wreath',
         },
@@ -301,7 +329,7 @@ const allData = {
       types: [
         {
           name: 'Air Repatriation',
-          price: 550000,
+          price: 'Negotiable',
           img: Repatration,
           type: 'Repatriation',
         },
@@ -327,6 +355,19 @@ const allData = {
       text: 'Pre-Approved',
     },
   ],
+
+  familyImages: [
+    famImg1,
+    famImg2,
+    famImg3,
+    famImg4,
+    famImg5,
+    famImg6,
+    famImg7,
+    famImg8,
+  ],
+
+  coffinImages: [cofImg1, cofImg2, cofImg3, cofImg4, cofImg5, cofImg6],
 };
 
 export default allData;

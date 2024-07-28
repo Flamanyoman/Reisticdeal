@@ -37,7 +37,7 @@ const Home_Section2 = () => {
       <div className='flex-[.45] h-full flex items-center justify-end'>
         <img
           src={allData.services[3].image}
-          alt='Saint best image'
+          alt='Cent Best'
           className='w-[98%]'
         />
       </div>

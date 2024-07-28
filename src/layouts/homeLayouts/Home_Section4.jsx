@@ -18,7 +18,9 @@ import cofImg2 from '../../assets/Cof img 2.jpg';
 import cofImg3 from '../../assets/Cof img 3.jpg';
 import cofImg4 from '../../assets/Cof img 4.jpg';
 import cofImg5 from '../../assets/Cof img 5.jpg';
-import cofImg6 from '../../assets/Cof img 5.jpg';
+import VideoThumbnail from '../../components/videothumbnail';
+
+const videos = ['DX7fS8FGmjA', 'GowGxFgZddQ', 'B11UWGVjPEo'];
 
 const Home_Section4 = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -40,7 +42,7 @@ const Home_Section4 = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === '/gallery') setGallery(true);
+    if (location.pathname === 'gallery') setGallery(true);
   }, [location.pathname]);
 
   const navigate = useNavigate();
@@ -69,13 +71,15 @@ const Home_Section4 = () => {
 
       {!isMobile || gallery ? (
         <div className='columns-1 sm:columns-2 md:columns-3 gap-4 w-full'>
-          {images.map((image, i) => (
+          {videos.map((video, i) => (
             <div key={i} className='mb-4 break-inside-avoid'>
-              <ImageDiv
+              {/* <ImageDiv
                 width={'w-full'}
                 src={image.src}
                 // bottomText={image.alt}
-              />
+              /> */}
+
+              <VideoThumbnail id={video} />
             </div>
           ))}
         </div>
