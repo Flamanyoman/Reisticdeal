@@ -44,22 +44,22 @@ import GadoliWreath from '../assets/Gadoli wreath.jpg';
 import Repatration from '../assets/repatriation.jpg';
 
 // Family Images
-import famImg1 from '../assets/Fam img 1.jpg';
-import famImg2 from '../assets/Fam img 2.jpg';
-import famImg3 from '../assets/Fam img 3.jpg';
-import famImg4 from '../assets/Fam img 4.jpg';
-import famImg5 from '../assets/Fam img 5.jpg';
+import famImg1 from '../assets/Fam img 1.1.jpg';
+import famImg2 from '../assets/Fam img 2.1.jpg';
+import famImg3 from '../assets/Fam img 3.1.jpg';
+import famImg4 from '../assets/Fam img 4.1.jpg';
+import famImg5 from '../assets/Fam img 5.1.jpg';
 import famImg6 from '../assets/Fam img 6.jpg';
-import famImg7 from '../assets/Fam img 7.jpg';
-import famImg8 from '../assets/Fam img 8.jpg';
+import famImg7 from '../assets/Fam img 7.1.jpg';
+import famImg8 from '../assets/Fam img 8.1.jpg';
 
 // Coffin Images
-import cofImg1 from '../assets/Cof img 1.jpg';
-import cofImg2 from '../assets/Cof img 2.jpg';
-import cofImg3 from '../assets/Cof img 3.jpg';
-import cofImg4 from '../assets/Cof img 4.jpg';
-import cofImg5 from '../assets/Cof img 5.jpg';
-import cofImg6 from '../assets/Cof img 6.jpg';
+import cofImg1 from '../assets/Cof img 1.1.jpg';
+import cofImg2 from '../assets/Cof img 2.1.jpg';
+import cofImg3 from '../assets/Cof img 3.1.jpg';
+import cofImg4 from '../assets/Cof img 4.1.jpg';
+import cofImg5 from '../assets/Cof img 5.1.jpg';
+import cofImg6 from '../assets/Cof img 6.1.jpg';
 
 const allData = {
   services: [

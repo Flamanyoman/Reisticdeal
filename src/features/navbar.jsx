@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Logo from '../assets/cent best logo.jpg';
 import CustomLink from '../components/ui/links';
-import Menu from '../assets/Menu.png';
+// import Menu from '../assets/Menu.png';
 import { useState } from 'react';
 
 const Navbar = () => {

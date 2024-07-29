@@ -3,7 +3,8 @@ import play from '../assets/play.png';
 import { modalContext } from '../context/cartContext';
 
 const VideoThumbnail = ({ id }) => {
-  const { isModalOpen, setIsModalOpen, setModalData } = useContext(modalContext);
+  const { isModalOpen, setIsModalOpen, setModalData } =
+    useContext(modalContext);
 
   useEffect(() => {
     return () => {
@@ -12,14 +13,13 @@ const VideoThumbnail = ({ id }) => {
     };
   }, [setIsModalOpen, setModalData]);
 
+  const handleClick = () => {
+    setModalData({ id });
+    setIsModalOpen(true);
+  };
+
   return (
-    <span
-      className='relative w-fit h-fit'
-      onClick={() => {
-        setIsModalOpen(true);
-        setModalData({ id });
-      }}
-    >
+    <span className='relative w-fit h-fit' onClick={handleClick}>
       <img
         src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
         alt='Video Thumbnail'

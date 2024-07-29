@@ -5,9 +5,10 @@ import CaseStudies from './pages/Case_Studies';
 import Testimonials from './pages/Testimonials';
 import OutofBounds from './pages/404';
 import { useContext } from 'react';
-import { cartContext } from './context/cartContext';
+import { cartContext, modalContext } from './context/cartContext';
 import Gallary from './pages/Gallary';
 import Cart from './components/cart';
+import VideoPlayer from './components/videoplayer';
 
 const router = createBrowserRouter([
   {
@@ -43,12 +44,27 @@ const router = createBrowserRouter([
 
 function App() {
   const { cart } = useContext(cartContext);
+  const { isModalOpen, setIsModalOpen, modalData, setModalData } =
+    useContext(modalContext);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalData('');
+  };
 
   return (
     <>
       <RouterProvider router={router} />
 
       {cart.length > 0 && <Cart />}
+
+      {isModalOpen && (
+        <VideoPlayer
+          state={isModalOpen}
+          src={modalData.id}
+          onClose={closeModal}
+        />
+      )}
     </>
   );
 }
