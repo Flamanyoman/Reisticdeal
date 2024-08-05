@@ -42,6 +42,10 @@ footer {
   padding: 25px 75px;
 }
 
+button {
+  cursor: pointer;
+}
+
 button.black,
 button.white,
 button.brand {
@@ -78,7 +82,6 @@ p {
   text-align: center;
   max-width: 650px;
 }
-
 p.left {
   text-align: left;
 }
@@ -240,4 +243,15 @@ button:active {
 
 .animate-grow {
   animation: growWidth 0.5s ease-out forwards;
+}
+
+/* Styles for screens with a width greater than 1024px */
+@media screen and (min-width: 1024px) {
+  body,
+  section,
+  header,
+  footer {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }

@@ -1,8 +1,9 @@
+// SpecialHeader.js
+import React from 'react';
 import { NormalButton } from '../components/ui/buttons';
-import { BigHeadings } from '../components/ui/headings';
 import Texts from '../components/ui/texts';
 
-const SpecialHeader = () => {
+const SpecialHeader = ({ onScrollToSection1 }) => {
   return (
     <div className='bg-transparent py-[75px] flex items-center justify-center maxScreenMobile:py-[30px] maxScreenMobile:flex-col'>
       <div className='maxScreenMobile:w-full h-[450px] flex flex-col items-center justify-center'>
@@ -18,7 +19,11 @@ const SpecialHeader = () => {
         />
         <span className='m-[20px]'></span>
 
-        <NormalButton colorType='white' text='Book a service' />
+        <NormalButton
+          colorType='white'
+          text='Book a service'
+          click={onScrollToSection1}
+        />
       </div>
     </div>
   );

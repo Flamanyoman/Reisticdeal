@@ -1,11 +1,15 @@
-import React from 'react';
+// Home_Section1.js
+import React, { forwardRef } from 'react';
 import { BigHeadings } from '../../components/ui/headings';
 import { ImageDiv } from '../../components/ui/images';
 import Texts from '../../components/ui/texts';
 
-const Home_Section1 = ({ services, onPurchaseClick }) => {
+const Home_Section1 = forwardRef(({ services, onPurchaseClick }, ref) => {
   return (
-    <div className='flex md:w-full w-[1050px] overflow-scroll no-scrollbar md:overflow-hidden'>
+    <div
+      ref={ref}
+      className='flex md:w-full w-[1050px] overflow-scroll no-scrollbar md:overflow-hidden'
+    >
       <div className='md:flex-[.65] maxScreenMobile:flex-[1] h-[430px] flex items-center justify-between no-scrollbar'>
         <ImageDiv
           src={services[0].image}
@@ -41,11 +45,11 @@ const Home_Section1 = ({ services, onPurchaseClick }) => {
         <Texts
           type='l'
           align={'center'}
-          text='It is always painful to lose someone. We want to help you through this trying period with tender loving care. '
+          text='It is always painful to lose someone. We want to help you through this trying period with tender loving care.'
         />
       </div>
     </div>
   );
-};
+});
 
 export default Home_Section1;

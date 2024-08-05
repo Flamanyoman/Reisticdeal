@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// Home.js
+import React, { useRef, useState } from 'react';
 import Footer from '../features/footer';
 import Navbar from '../features/navbar';
 import SpecialHeader from '../features/SpecialHeader';
@@ -17,6 +18,7 @@ import ImagePreloader from '../hooks/imagePreloader';
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
+  const section1Ref = useRef(null); // Ref for Home_Section1
 
   const handlePurchaseClick = (data) => {
     setModalData(data);
@@ -26,6 +28,16 @@ const Home = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setModalData(null);
+  };
+
+  const scrollToSection1 = () => {
+    console.log('clicked');
+    if (section1Ref.current) {
+      section1Ref.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 
   const currentImage = useImageSlider();
@@ -38,7 +50,7 @@ const Home = () => {
       {/* Preload images */}
       <ImagePreloader images={allImageUrls} />
 
-      <section className={`sticky top-0 z-[-2]`}>
+      <section className={`sticky top-0`}>
         <div className='absolute inset-0 bg-black opacity-80 z-0 border'></div>
         <div
           className='absolute inset-0 z-[-1] bg-no-repeat bg-cover bg-center overflow-hidden'
@@ -48,7 +60,7 @@ const Home = () => {
         ></div>
         <div className='relative z-10'>
           <Navbar />
-          <SpecialHeader />
+          <SpecialHeader onScrollToSection1={scrollToSection1} />
         </div>
       </section>
 
@@ -57,6 +69,7 @@ const Home = () => {
           <Home_Section1
             services={allData.services}
             onPurchaseClick={handlePurchaseClick}
+            ref={section1Ref} // Pass the ref here
           />
         </section>
         <section>

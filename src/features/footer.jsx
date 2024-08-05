@@ -1,7 +1,7 @@
 import { BigHeadings } from '../components/ui/headings';
 import Texts from '../components/ui/texts';
 
-import { FaGoogle } from 'react-icons/fa';
+import { FaFacebook, FaGoogle } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -24,18 +24,32 @@ const Footer = () => {
         />
 
         <span className='flex items-center justify-between maxScreenMobile:justify-around w-[190px] pt-[30px] maxScreenMobile:w-full'>
-          <span className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'>
+          <a
+            className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'
+            href='mailto:centbestwellness@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <FaGoogle />
-          </span>
-          <span className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'>
-            <FaTwitter />
-          </span>
-          <span className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'>
+          </a>
+
+          <a
+            className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'
+            href='https://www.instagram.com/centbestwellness/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <FaInstagram />
-          </span>
-          <span className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'>
-            <FaLinkedin />
-          </span>
+          </a>
+
+          <a
+            className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'
+            href='https://web.facebook.com/profile.php?id=61561477370262'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFacebook />
+          </a>
         </span>
       </div>
 

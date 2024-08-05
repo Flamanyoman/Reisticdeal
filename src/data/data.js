@@ -47,19 +47,6 @@ import Repatration from '../assets/repatriation.jpg';
 import famImg1 from '../assets/Fam img 1.1.jpg';
 import famImg2 from '../assets/Fam img 2.1.jpg';
 import famImg3 from '../assets/Fam img 3.1.jpg';
-import famImg4 from '../assets/Fam img 4.1.jpg';
-import famImg5 from '../assets/Fam img 5.1.jpg';
-import famImg6 from '../assets/Fam img 6.jpg';
-import famImg7 from '../assets/Fam img 7.1.jpg';
-import famImg8 from '../assets/Fam img 8.1.jpg';
-
-// Coffin Images
-import cofImg1 from '../assets/Cof img 1.1.jpg';
-import cofImg2 from '../assets/Cof img 2.1.jpg';
-import cofImg3 from '../assets/Cof img 3.1.jpg';
-import cofImg4 from '../assets/Cof img 4.1.jpg';
-import cofImg5 from '../assets/Cof img 5.1.jpg';
-import cofImg6 from '../assets/Cof img 6.1.jpg';
 
 const allData = {
   services: [
@@ -351,18 +338,9 @@ const allData = {
     },
   ],
 
-  familyImages: [
-    famImg1,
-    famImg2,
-    famImg3,
-    famImg4,
-    famImg5,
-    famImg6,
-    famImg7,
-    famImg8,
-  ],
+  familyImages: [famImg1, famImg2, famImg3],
 
-  coffinImages: [cofImg1, cofImg2, cofImg3, cofImg4, cofImg5, cofImg6],
+  coffinImages: [],
 };
 
 export default allData;
