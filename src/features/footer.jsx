@@ -53,7 +53,7 @@ const Footer = () => {
         </span>
       </div>
 
-      <div className='w-1/2 flex flex-col pr-[60px] maxScreenMobile:w-full maxScreenMobile:pr-0'>
+      {/* <div className='w-1/2 flex flex-col pr-[60px] maxScreenMobile:w-full maxScreenMobile:pr-0'>
         <BigHeadings color='bigheader_white' type='h2' text1='Links' />
         <div className='flex justify-between items-center maxScreenMobile:flex-col maxScreenMobile:h-[300px] maxScreenMobile:items-start maxScreenMobile:mt-[30px]'>
           <CustomLink to='/' text='Home' />
@@ -62,7 +62,7 @@ const Footer = () => {
           <CustomLink to='/case-studies' text='Case Studies' />
           <CustomLink to='/testimonials' text='Testimonials' />
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };
