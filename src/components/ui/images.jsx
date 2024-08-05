@@ -68,11 +68,13 @@ const ImageCard = ({ width, src, header, text, button, click }) => {
       <img src={src} className={`w-full aspect-video`} alt='Cent image' />
 
       <div className='w-full min-h-[340px] maxScreenMobile:min-h-[270px] flex flex-col justify-between items-center p-[20px] maxScreenMobile:py-[15px]'>
-        <div className='w-full flex items-start h-[80px] maxScreenMobile:h-[50px]'>
+        <div className='w-full flex items-start min-h-[80px] maxScreenMobile:h-[50px]'>
           <BigHeadings type={'h2'} text1={header} />
         </div>
 
-        <Texts text={text} type={'l'} align={'left'} />
+        <div className='flex-1 flex flex-col justify-start'>
+          <Texts text={text} type={'l'} align={'left'} />
+        </div>
 
         <NormalButton text={button} colorType={'black'} click={click} />
       </div>

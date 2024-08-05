@@ -6,11 +6,10 @@ const SpecialHeader = () => {
   return (
     <div className='bg-transparent py-[75px] flex items-center justify-center maxScreenMobile:py-[30px] maxScreenMobile:flex-col'>
       <div className='maxScreenMobile:w-full h-[450px] flex flex-col items-center justify-center'>
-        <BigHeadings
-          color='bigheader_white'
-          type='h1'
-          text1='Welcome to Cent Best Wellness, where we combine care and cost.'
-        />
+        <h1 className='bigheader_white text-[53px] leading-[56px] font-[500] max-w-[800px] py-[30px] text-center maxScreenMobile:text-[33px] maxScreenMobile:leading-[36px] maxScreenMobile:py-[15px]'>
+          At Cent Best Wellness we give quality <span> care </span>and a
+          <span> dignified farewell</span>.
+        </h1>
 
         <Texts
           color='white'

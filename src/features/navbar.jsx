@@ -11,24 +11,16 @@ const Navbar = () => {
   return (
     <div className='flex flex-col bg-transparent '>
       <nav className='flex items-center justify-between'>
-        <span className='flex w-[450px] items-center justify-between maxScreenMobile:hidden'>
-          {/* <CustomLink to='/' text='Home' />
-          <CustomLink to='/about' text='Services' />
-          <CustomLink to='/services' text='Gallary' /> */}
-        </span>
+        <span className='flex w-[450px] items-center justify-between maxScreenMobile:hidden'></span>
 
         <img
           src={Logo}
           alt='Reisticdeal '
           onClick={() => navigate('/')}
-          className='cursor-pointer w-[70px] aspect-auto'
+          className='cursor-pointer w-[120px] aspect-auto'
         />
 
-        <span className='flex w-[450px] items-center justify-between maxScreenMobile:hidden'>
-          {/* <CustomLink to='/services' text='About us' />
-          <CustomLink to='/case-studies' text='Tribute site' />
-          <CustomLink to='/testimonials' text='Location' /> */}
-        </span>
+        <span className='flex w-[450px] items-center justify-between maxScreenMobile:hidden'></span>
 
         {/* <span
           className='items-center justify-between md:hidden'

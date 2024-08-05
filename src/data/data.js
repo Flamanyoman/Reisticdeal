@@ -9,7 +9,6 @@ import Sienna from '../assets/Sienna.jpg';
 import Expert from '../assets/Expert.jpg';
 import Hiace from '../assets/Hiace.jpg';
 
-import LocalSteel from '../assets/Local steel.jpg';
 import LocalWood from '../assets/Local wood.jpg';
 import ForiegnSteel from '../assets/Foriegn steel.webp';
 import ForiegnWood from '../assets/Foriegn wood.jpg';
@@ -29,10 +28,11 @@ import Decoration from '../assets/Decoration.jpg';
 
 import PallBearers from '../assets/Pall bearers.jpg';
 
+const fliers =
+  'https://images.unsplash.com/photo-1597247044228-91275129344e?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+
 const CameraMan =
   'https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Billboards =
-  'https://images.pexels.com/photos/9740620/pexels-photo-9740620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
 
 const Wreath =
   'https://plus.unsplash.com/premium_photo-1695751302118-64e1aabbd539?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
@@ -97,25 +97,20 @@ const allData = {
       description: '',
       types: [
         {
-          name: 'Local wood',
+          name: 'Local',
           price: 'Negotiable',
           img: LocalWood,
           type: 'Coffin',
         },
         {
-          name: 'Foreign Wood',
+          name: 'Foreign',
           price: 'Negotiable',
           img: ForiegnWood,
           type: 'Coffin',
         },
+
         {
-          name: 'Local steel',
-          price: 'Negotiable',
-          img: LocalSteel,
-          type: 'Coffin',
-        },
-        {
-          name: 'Foreign steel',
+          name: 'steel',
           price: 'Negotiable',
           img: ForiegnSteel,
           type: 'Coffin',
@@ -221,11 +216,27 @@ const allData = {
       ],
     },
 
+    // Obituary fliers (6)
+    {
+      image: fliers,
+      description:
+        'We create elegant and respectful posters promptly to help you spread the word and invite your distinguished guests.',
+      tagLine: 'Obituary Poster',
+      types: [
+        {
+          Name: 'Fliers Creation',
+          price: 'Negotiable',
+          img: fliers,
+          type: 'Photography',
+        },
+      ],
+    },
+
     // images and video coverage (7)
     {
       image: CameraMan,
       description:
-        'Find the best Camara men to cover the event to cement the memory of laying your loved one to rest forever',
+        'Ensure every moment of your loved one’s farewell is captured with clarity and respect through our professional camera and video coverage services.',
       tagLine: 'Video and Camera Coverage',
       types: [
         {
@@ -265,22 +276,6 @@ const allData = {
           price: 'Negotiable',
           img: PallBearers,
           type: 'Service',
-        },
-      ],
-    },
-
-    // Billboards and Advertisements (8)
-    {
-      image: Billboards,
-      description:
-        'Reach a wider audience with our Billboards and Advertisements service. We offer strategic placement and eye-catching designs to effectively convey your message.',
-      tagLine: 'Billboards and Advertisements',
-      types: [
-        {
-          name: 'Billboards and Advertisements',
-          price: 'Negotiable',
-          img: Billboards,
-          type: 'Billboards',
         },
       ],
     },

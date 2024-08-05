@@ -12,6 +12,7 @@ import Home_Section7 from '../layouts/homeLayouts/Home_Section7';
 import Modal from '../components/ui/modal';
 import Home_Section3_5 from '../layouts/homeLayouts/Home_Section3_5';
 import useImageSlider from '../components/courosel';
+import ImagePreloader from '../hooks/imagePreloader';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,19 +30,28 @@ const Home = () => {
 
   const currentImage = useImageSlider();
 
+  // Combine all image URLs for preloading
+  const allImageUrls = [...allData.coffinImages, ...allData.familyImages];
+
   return (
     <div className='fillwindow'>
-      <section
-        className={` bg-no-repeat bg-cover bg-center overflow-hidden sticky top-0 z-[-1]`}
-        style={{ backgroundImage: `url(${currentImage})` }}
-      >
-        <div className='absolute inset-0 bg-black opacity-80 z-0'></div>{' '}
-        {/* Overlay */}
+      {/* Preload images */}
+      <ImagePreloader images={allImageUrls} />
+
+      <section className={`sticky top-0 z-[-2]`}>
+        <div className='absolute inset-0 bg-black opacity-80 z-0 border'></div>
+        <div
+          className='absolute inset-0 z-[-1] bg-no-repeat bg-cover bg-center overflow-hidden'
+          style={{
+            backgroundImage: `url(${currentImage})`,
+          }}
+        ></div>
         <div className='relative z-10'>
           <Navbar />
           <SpecialHeader />
         </div>
       </section>
+
       <div className='bg-white sticky top-[90px]'>
         <section className='w-full overflow-scroll'>
           <Home_Section1
@@ -75,6 +85,7 @@ const Home = () => {
         </section>
         <Footer />
       </div>
+
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} data={modalData} />
     </div>
   );

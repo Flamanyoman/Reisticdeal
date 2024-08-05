@@ -36,7 +36,7 @@ const LongCard = ({ services, onPurchaseClick }) => {
       <div className='maxScreenMobile:mt-2'>
         <NormalButton
           colorType={'white'}
-          text={'Place an order'}
+          text={'Book Service'}
           click={() => handleClick(services[services.length - 1])}
         />
       </div>
