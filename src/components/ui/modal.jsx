@@ -36,27 +36,29 @@ const Modal = ({ isOpen, onClose, data }) => {
           </button>
         </div>
         <div className='grid grid-cols-3 gap-x-5 maxScreenMobile:grid-cols-2 gap-y-10'>
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className='relative flex items-center justify-center aspect-square'
-            >
-              <p className='s text-white drop-shadow-[0_48px_48px_rgba(0,0,0,1)] absolute top-[12px] left-[12px] z-10 bg-[rgba(0,0,0,0.16)] p-2'>
-                {item.name}
-              </p>
-              <img
-                src={item.img}
-                alt='Best image'
-                className='absolute w-full h-full top-0 left-0 object-cover'
-              />
-              <button
-                className='white px-[18px] py-[4.5px] maxScreenMobile:mx-auto rounded-[7px] maxScreenMobile:py-[10px] maxScreenMobile:px-[20px] absolute bottom-[12px] right-[12px] maxScreenMobile:scale-[.68]'
-                onClick={() => handleAddToCart(item)}
+          {data
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item, index) => (
+              <div
+                key={index}
+                className='relative flex items-center justify-center aspect-square'
               >
-                Add To Cart
-              </button>
-            </div>
-          ))}
+                <p className='s text-white drop-shadow-[0_48px_48px_rgba(0,0,0,1)] absolute top-[12px] left-[12px] z-10 bg-[rgba(0,0,0,0.16)] p-2'>
+                  {item.name}
+                </p>
+                <img
+                  src={item.img}
+                  alt='Best image'
+                  className='absolute w-full h-full top-0 left-0 object-cover'
+                />
+                <button
+                  className='white px-[18px] py-[4.5px] maxScreenMobile:mx-auto rounded-[7px] maxScreenMobile:py-[10px] maxScreenMobile:px-[20px] absolute bottom-[12px] right-[12px] maxScreenMobile:scale-[.68]'
+                  onClick={() => handleAddToCart(item)}
+                >
+                  Add To Cart
+                </button>
+              </div>
+            ))}
         </div>
       </div>
     </div>

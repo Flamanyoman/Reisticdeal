@@ -9,27 +9,35 @@ import Sienna from '../assets/Sienna.jpg';
 import Expert from '../assets/Expert.jpg';
 import Hiace from '../assets/Hiace.jpg';
 
-import LocalWood from '../assets/Local wood.jpg';
-import ForiegnSteel from '../assets/Foriegn steel.webp';
-import ForiegnWood from '../assets/Foriegn wood.jpg';
+import Pecan from '../assets/pecan.jpg';
+import Ceder from '../assets/Ceder.jpg';
+import deepBrown from '../assets/deep brown.jpg';
+import maroon from '../assets/Maroon.jpg';
+import walnut from '../assets/walnut.jpg';
+import whiteAndGold from '../assets/white and gold.jpg';
+
+import Casket2 from '../assets/Casket2.jpg';
+import Casket4 from '../assets/Casket4.jpg';
+import Casket5 from '../assets/Casket5.jpg';
+import Casket6 from '../assets/Casket6.jpg';
+import Casket7 from '../assets/Casket7.jpg';
+import Casket8 from '../assets/Casket8.jpg';
+import Casket10 from '../assets/Casket10.jpg';
+import Casket12 from '../assets/Casket12.jpg';
 
 import TilesHeadstone from '../assets/Tiles headstone.jpg';
-import ConcretHeadstone from '../assets/Concret headstone.jpg';
-import WoodHeadstone from '../assets/Wood headstone.jpg';
 import MarbleHeadstone from '../assets/Marble headstone.jpg';
 import SlateHeadstone from '../assets/Slate headstone.jpg';
-import StatueHeadstone from '../assets/Statue headstone.jpg';
 
 import Hearse from '../assets/Hearse.webp';
 
 import LoweringDevice from '../assets/Lowering device.jpg';
 
+import fliers from '../assets/fliers.jpg';
+
 import Decoration from '../assets/Decoration.jpg';
 
 import PallBearers from '../assets/Pall bearers.jpg';
-
-const fliers =
-  'https://images.unsplash.com/photo-1597247044228-91275129344e?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
 const CameraMan =
   'https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
@@ -84,22 +92,99 @@ const allData = {
       description: '',
       types: [
         {
-          name: 'Local',
+          name: 'Maroon (Local)',
           price: 'Negotiable',
-          img: LocalWood,
+          img: maroon,
           type: 'Coffin',
         },
         {
-          name: 'Foreign',
+          name: 'Pink (Foreign)',
           price: 'Negotiable',
-          img: ForiegnWood,
+          img: Casket2,
           type: 'Coffin',
         },
 
         {
-          name: 'steel',
+          name: 'Ceder (Local)',
           price: 'Negotiable',
-          img: ForiegnSteel,
+          img: Ceder,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Mahogany (Foreign)',
+          price: 'Negotiable',
+          img: Casket4,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'White and Brown (Foreign)',
+          price: 'Negotiable',
+          img: Casket5,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Black and Orange (Foreign)',
+          price: 'Negotiable',
+          img: Casket6,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Bronze (Foreign)',
+          price: 'Negotiable',
+          img: Casket7,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'White and Silver (Foreign)',
+          price: 'Negotiable',
+          img: Casket8,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Coffee (Foreign)',
+          price: 'Negotiable',
+          img: Casket10,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Auburn (Foreign)',
+          price: 'Negotiable',
+          img: Casket12,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Pecan (Local)',
+          price: 'Negotiable',
+          img: Pecan,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Deep brown (Local)',
+          price: 'Negotiable',
+          img: deepBrown,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'White and Gold (Local)',
+          price: 'Negotiable',
+          img: whiteAndGold,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Walnut (Walnut)',
+          price: 'Negotiable',
+          img: walnut,
           type: 'Coffin',
         },
       ],
@@ -111,18 +196,6 @@ const allData = {
         'https://images.unsplash.com/photo-1620405400036-ed8d0e237078?q=80&w=1428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       description: '',
       types: [
-        {
-          name: 'Concrete',
-          price: 'Negotiable',
-          img: ConcretHeadstone,
-          type: 'Grave',
-        },
-        {
-          name: 'Wood',
-          price: 'Negotiable',
-          img: WoodHeadstone,
-          type: 'Grave',
-        },
         {
           name: 'Tiles',
           price: 'Negotiable',
@@ -136,15 +209,9 @@ const allData = {
           type: 'Grave',
         },
         {
-          name: 'Slate',
+          name: 'Granite',
           price: 'Negotiable',
           img: SlateHeadstone,
-          type: 'Grave',
-        },
-        {
-          name: 'Statue',
-          price: 'Negotiable',
-          img: StatueHeadstone,
           type: 'Grave',
         },
       ],

@@ -8,6 +8,7 @@ import Home_Section1 from '../layouts/homeLayouts/Home_Section1';
 import Home_Section2 from '../layouts/homeLayouts/Home_Section2';
 import Home_Section3 from '../layouts/homeLayouts/Home_Section3';
 import Home_Section4 from '../layouts/homeLayouts/Home_Section4';
+import Home_Section5 from '../layouts/homeLayouts/Home_Section5';
 import Home_Section6 from '../layouts/homeLayouts/Home_Section6';
 import Home_Section7 from '../layouts/homeLayouts/Home_Section7';
 import Modal from '../components/ui/modal';
@@ -81,6 +82,7 @@ const Home = () => {
             onPurchaseClick={handlePurchaseClick}
           />
         </section>
+
         <section>
           <Home_Section3_5
             services={allData.services}
@@ -90,6 +92,11 @@ const Home = () => {
         <section className='bg-[#1E1E1E]'>
           <Home_Section4 />
         </section>
+
+        {/* <section>
+          <Home_Section5 />
+        </section> */}
+
         <section>
           <Home_Section6 />
         </section>

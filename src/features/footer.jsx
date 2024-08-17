@@ -2,10 +2,7 @@ import { BigHeadings } from '../components/ui/headings';
 import Texts from '../components/ui/texts';
 
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import CustomLink from '../components/ui/links';
 
 const Footer = () => {
   return (
