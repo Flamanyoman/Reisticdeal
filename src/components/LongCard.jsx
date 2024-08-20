@@ -22,7 +22,7 @@ const LongCard = ({ services, onPurchaseClick }) => {
         <BigHeadings
           type={'h2'}
           color={'bigheader_white'}
-          text1={'Repatration Service'}
+          text1={'Repatriation Service'}
         />
 
         <Texts

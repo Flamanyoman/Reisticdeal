@@ -49,7 +49,7 @@ import RosesWreath from '../assets/Roses wreath.jpg';
 import OrchidsWreath from '../assets/Orchids wreath.jpg';
 import GadoliWreath from '../assets/Gadoli wreath.jpg';
 
-import Repatration from '../assets/repatriation.jpg';
+import Repatriation from '../assets/repatriation.jpg';
 
 // Family Images
 import famImg1 from '../assets/Fam img 1.1.jpg';
@@ -379,7 +379,7 @@ const allData = {
         {
           name: 'Air Repatriation',
           price: 'Negotiable',
-          img: Repatration,
+          img: Repatriation,
           type: 'Repatriation',
         },
       ],
