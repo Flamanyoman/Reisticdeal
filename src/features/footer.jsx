@@ -3,6 +3,7 @@ import Texts from '../components/ui/texts';
 
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
+import { FaSquarePhone } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
@@ -46,6 +47,13 @@ const Footer = () => {
             rel='noopener noreferrer'
           >
             <FaFacebook />
+          </a>
+
+          <a
+            className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'
+            href='tel:+2349068314394'
+          >
+            <FaSquarePhone />
           </a>
         </span>
       </div>

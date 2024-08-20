@@ -24,6 +24,10 @@ import Casket7 from '../assets/Casket7.jpg';
 import Casket8 from '../assets/Casket8.jpg';
 import Casket10 from '../assets/Casket10.jpg';
 import Casket12 from '../assets/Casket12.jpg';
+import WhiteAndSilver from '../assets/white and silver local.jpg';
+import WallnutForeign from '../assets/walnut foreign.jpg';
+import WhiteImg from '../assets/White.jpg';
+import BurgundyLocal from '../assets/Burgundy local.jpg';
 
 import TilesHeadstone from '../assets/Tiles headstone.jpg';
 import MarbleHeadstone from '../assets/Marble headstone.jpg';
@@ -182,9 +186,37 @@ const allData = {
         },
 
         {
-          name: 'Walnut (Walnut)',
+          name: 'Walnut (Local)',
           price: 'Negotiable',
           img: walnut,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'White and Silver (Local)',
+          price: 'Negotiable',
+          img: WhiteAndSilver,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Walnut Foreign (Foreign)',
+          price: 'Negotiable',
+          img: WallnutForeign,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'White (Local)',
+          price: 'Negotiable',
+          img: WhiteImg,
+          type: 'Coffin',
+        },
+
+        {
+          name: 'Burgundy (Local)',
+          price: 'Negotiable',
+          img: BurgundyLocal,
           type: 'Coffin',
         },
       ],
@@ -197,23 +229,30 @@ const allData = {
       description: '',
       types: [
         {
-          name: 'Tiles',
+          name: 'Tombstone',
           price: 'Negotiable',
           img: TilesHeadstone,
           type: 'Grave',
         },
-        {
-          name: 'Marble',
-          price: 'Negotiable',
-          img: MarbleHeadstone,
-          type: 'Grave',
-        },
-        {
-          name: 'Granite',
-          price: 'Negotiable',
-          img: SlateHeadstone,
-          type: 'Grave',
-        },
+
+        // {
+        //   name: 'Tiles',
+        //   price: 'Negotiable',
+        //   img: TilesHeadstone,
+        //   type: 'Grave',
+        // },
+        // {
+        //   name: 'Marble',
+        //   price: 'Negotiable',
+        //   img: MarbleHeadstone,
+        //   type: 'Grave',
+        // },
+        // {
+        //   name: 'Granite',
+        //   price: 'Negotiable',
+        //   img: SlateHeadstone,
+        //   type: 'Grave',
+        // },
       ],
     },
 

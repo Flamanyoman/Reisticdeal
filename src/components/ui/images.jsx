@@ -2,6 +2,8 @@ import { NormalButton } from './buttons';
 import { BigHeadings } from './headings';
 import Texts from './texts';
 import allData from '../../data/data';
+import { useContext } from 'react';
+import { cartContext } from '../../context/cartContext';
 
 const ImageDiv = ({
   src,
@@ -11,9 +13,16 @@ const ImageDiv = ({
   arrayNum,
   onPurchaseClick,
 }) => {
+  const { cart, setCart } = useContext(cartContext);
+
   const handlePurchaseClick = () => {
     const serviceData = allData.services[arrayNum].types;
-    onPurchaseClick(serviceData);
+
+    if (serviceData.length > 1) {
+      onPurchaseClick(serviceData);
+    } else {
+      setCart([...cart, allData.services[arrayNum].types[0]]);
+    }
   };
 
   return type === 'hover-image' ? (
