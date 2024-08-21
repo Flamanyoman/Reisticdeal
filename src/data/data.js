@@ -96,7 +96,7 @@ const allData = {
       description: '',
       types: [
         {
-          name: 'Maroon (Local)',
+          name: 'Maroon (Domestic)',
           price: 'Negotiable',
           img: maroon,
           type: 'Coffin',
@@ -109,7 +109,7 @@ const allData = {
         },
 
         {
-          name: 'Ceder (Local)',
+          name: 'Ceder (Domestic)',
           price: 'Negotiable',
           img: Ceder,
           type: 'Coffin',
@@ -165,35 +165,35 @@ const allData = {
         },
 
         {
-          name: 'Pecan (Local)',
+          name: 'Pecan (Domestic)',
           price: 'Negotiable',
           img: Pecan,
           type: 'Coffin',
         },
 
         {
-          name: 'Deep brown (Local)',
+          name: 'Deep brown (Domestic)',
           price: 'Negotiable',
           img: deepBrown,
           type: 'Coffin',
         },
 
         {
-          name: 'White and Gold (Local)',
+          name: 'White and Gold (Domestic)',
           price: 'Negotiable',
           img: whiteAndGold,
           type: 'Coffin',
         },
 
         {
-          name: 'Walnut (Local)',
+          name: 'Walnut (Domestic)',
           price: 'Negotiable',
           img: walnut,
           type: 'Coffin',
         },
 
         {
-          name: 'White and Silver (Local)',
+          name: 'White and Silver (Domestic)',
           price: 'Negotiable',
           img: WhiteAndSilver,
           type: 'Coffin',
@@ -207,14 +207,14 @@ const allData = {
         },
 
         {
-          name: 'White (Local)',
+          name: 'White (Domestic)',
           price: 'Negotiable',
           img: WhiteImg,
           type: 'Coffin',
         },
 
         {
-          name: 'Burgundy (Local)',
+          name: 'Burgundy (Domestic)',
           price: 'Negotiable',
           img: BurgundyLocal,
           type: 'Coffin',

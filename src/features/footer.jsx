@@ -3,7 +3,7 @@ import Texts from '../components/ui/texts';
 
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import { FaSquarePhone } from 'react-icons/fa6';
+import { FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -51,9 +51,9 @@ const Footer = () => {
 
           <a
             className='p-[11.5px] cursor-pointer rounded-full bg-[#2386c06e] text-white'
-            href='tel:+2349068314394'
+            href='tel:+2348132446079'
           >
-            <FaSquarePhone />
+            <FaPhone />
           </a>
         </span>
       </div>
