@@ -1,14 +1,38 @@
+import { useState, useEffect } from 'react';
+
 const Home_Section5 = () => {
+  const [touchStart, setTouchStart] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the user is on a mobile device
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/android|iPad|iPhone|iPod|mobile|tablet/i.test(userAgent)) {
+      setIsMobile(true);
+    }
+  }, []);
+
   const handleMapClick = () => {
     const destination = '9.033506,7.4846105'; // Latitude and Longitude of the destination
     const url = `https://www.google.com/maps/dir/?api=1&destination=${destination}&travelmode=driving`;
     window.open(url, '_blank');
   };
 
+  const handleTouchStart = () => {
+    const now = Date.now();
+    if (now - touchStart < 300) {
+      handleMapClick(); // Double tap detected
+    }
+    setTouchStart(now);
+  };
+
   return (
     <div
       className='flex flex-col items-center relative md:h-[400px] border w-full maxScreenMobile:w-full maxScreenMobile:aspect-video'
-      onClick={handleMapClick}
+      onClick={() => {
+        if (!('ontouchstart' in window)) handleMapClick(); // Handle click for desktop
+      }}
+      onTouchStart={handleTouchStart} // Handle double-tap for mobile/touch devices
       style={{ cursor: 'pointer', position: 'relative' }}
     >
       {/* Map iframe */}
@@ -17,14 +41,14 @@ const Home_Section5 = () => {
         className='w-full h-full'
         style={{ border: 0, pointerEvents: 'none' }}
         allowFullScreen
-        loading='lazy'
+        loading='eager' // Preload the map as the page loads
         referrerPolicy='no-referrer-when-downgrade'
       ></iframe>
 
       {/* Dimming overlay */}
       <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50 hover:opacity-30 flex justify-center items-center transition-opacity duration-300'>
         <span className='text-white text-lg font-semibold'>
-          Click to get directions
+          {isMobile ? 'Double tap to get directions' : 'Click to get directions'}
         </span>
       </div>
     </div>

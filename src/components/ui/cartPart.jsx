@@ -10,7 +10,9 @@ const CartPart = ({ show, setShow, cart, open, setOpen }) => {
 
   const handleOrderClick = (e) => {
     e.stopPropagation();
-    const number = '+2348132446079';
+
+    // Default number
+    let number = '+2348132446079';
 
     // Group items by name and type
     const groupedItems = cart.reduce((acc, item) => {
@@ -22,8 +24,14 @@ const CartPart = ({ show, setShow, cart, open, setOpen }) => {
       return acc;
     }, {});
 
+    // Check if the only item is "Tribute Site"
+    const itemsArray = Object.values(groupedItems);
+    if (itemsArray.length === 1 && itemsArray[0].name === 'Tribute Site') {
+      number = '+2349068314394'; // Change to the desired number
+    }
+
     // Generate message
-    const items = Object.values(groupedItems)
+    const items = itemsArray
       .map((item, index, array) => {
         const itemDescription = `${item.count > 1 ? item.count + ' ' : ''}${
           item.name
