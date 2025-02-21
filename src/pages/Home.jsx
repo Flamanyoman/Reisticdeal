@@ -15,11 +15,14 @@ import Modal from '../components/ui/modal';
 import Home_Section3_5 from '../layouts/homeLayouts/Home_Section3_5';
 import useImageSlider from '../components/courosel';
 import ImagePreloader from '../hooks/imagePreloader';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
   const section1Ref = useRef(null); // Ref for Home_Section1
+
+  const navigate = useNavigate();
 
   const handlePurchaseClick = (data) => {
     setModalData(data);
@@ -32,13 +35,15 @@ const Home = () => {
   };
 
   const scrollToSection1 = () => {
-    console.log('clicked');
-    if (section1Ref.current) {
-      section1Ref.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
+    // console.log('clicked');
+    // if (section1Ref.current) {
+    //   section1Ref.current.scrollIntoView({
+    //     behavior: 'smooth',
+    //     block: 'start',
+    //   });
+    // }
+
+    navigate('/articles');
   };
 
   const currentImage = useImageSlider();
